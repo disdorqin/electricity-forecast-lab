@@ -1,0 +1,7 @@
+# Optional V2 formal-model dependencies; baseline LightGBM requirements remain unchanged.
+torch
+tabm
+rtdl_num_embeddings
+shap
+xgboost
+# No scikit-learn dependency is needed for AUC; metrics.py uses deterministic tie-aware Mann-Whitney ranks.

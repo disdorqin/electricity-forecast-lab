@@ -1,0 +1,674 @@
+{
+  "base": {
+    "complete_target_day_count": 1694,
+    "complete_target_through": "2026-08-21",
+    "expected_sha256": "a1b86f956d9fb18a483d473cbc0334e1078097f6ef75274b2804488968a349ea",
+    "immutable": true,
+    "partial_tail_day": "2026-08-22",
+    "partial_tail_hours": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "path": "data/frozen_repro/slot_table.parquet",
+    "rows": 40670,
+    "sha256": "a1b86f956d9fb18a483d473cbc0334e1078097f6ef75274b2804488968a349ea",
+    "source_last_timestamp": "2026-08-22T14:00:00",
+    "target_day_count": 1695
+  },
+  "blocking_gaps": [],
+  "canonical_spec": "docs/17_最终模型设计与编码规范.md",
+  "data_quality_quarantine": {
+    "policy": "feature/cell-level; no date-wide exclusion",
+    "rule": [
+      {
+        "affected_features": [
+          "err_地方电厂总加_7d_mean",
+          "err_地方电厂总加_7d_std",
+          "err_联络线受电负荷_7d_mean",
+          "err_联络线受电负荷_7d_std",
+          "err_风电总加_7d_mean",
+          "err_风电总加_7d_std",
+          "err_光伏总加_7d_mean",
+          "err_光伏总加_7d_std",
+          "err_核电总加_7d_mean",
+          "err_核电总加_7d_std",
+          "err_自备机组总加_7d_mean",
+          "err_自备机组总加_7d_std",
+          "err_试验机组总加_7d_mean",
+          "err_试验机组总加_7d_std",
+          "err_直调负荷_7d_mean",
+          "err_直调负荷_7d_std",
+          "err_竞价空间_7d_mean",
+          "err_竞价空间_7d_std",
+          "err_新能源总加_7d_mean",
+          "err_新能源总加_7d_std"
+        ],
+        "affected_keys": [
+          {
+            "hour_business": 1,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 2,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 3,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 4,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 5,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 6,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 7,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 8,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 9,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 10,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 11,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 12,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 13,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 14,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 15,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 16,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 17,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 18,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 19,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 20,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 21,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 22,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 23,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 24,
+            "target_day": "2026-08-15"
+          }
+        ],
+        "affected_source_dependency": [
+          "2026-08-15 actual fundamentals / realized forecast errors"
+        ],
+        "dependency_authority": "UPSTREAM_CANONICAL_BUILDER",
+        "dependency_closure_end": "2026-08-23",
+        "dependency_closure_start": "2026-08-17",
+        "dependency_evidence_status": "INFERRED_LEGACY",
+        "reason": "2026-08-15 actual anomaly propagated through 7-day declared upstream dependency window",
+        "resolution_source_sha256": null,
+        "status": "UNVERIFIED"
+      },
+      {
+        "affected_features": [
+          "err_地方电厂总加_28d_mean",
+          "err_地方电厂总加_28d_std",
+          "err_地方电厂总加_28d_q10",
+          "err_地方电厂总加_28d_q50",
+          "err_地方电厂总加_28d_q90",
+          "err_联络线受电负荷_28d_mean",
+          "err_联络线受电负荷_28d_std",
+          "err_联络线受电负荷_28d_q10",
+          "err_联络线受电负荷_28d_q50",
+          "err_联络线受电负荷_28d_q90",
+          "err_风电总加_28d_mean",
+          "err_风电总加_28d_std",
+          "err_风电总加_28d_q10",
+          "err_风电总加_28d_q50",
+          "err_风电总加_28d_q90",
+          "err_光伏总加_28d_mean",
+          "err_光伏总加_28d_std",
+          "err_光伏总加_28d_q10",
+          "err_光伏总加_28d_q50",
+          "err_光伏总加_28d_q90",
+          "err_核电总加_28d_mean",
+          "err_核电总加_28d_std",
+          "err_核电总加_28d_q10",
+          "err_核电总加_28d_q50",
+          "err_核电总加_28d_q90",
+          "err_自备机组总加_28d_mean",
+          "err_自备机组总加_28d_std",
+          "err_自备机组总加_28d_q10",
+          "err_自备机组总加_28d_q50",
+          "err_自备机组总加_28d_q90",
+          "err_试验机组总加_28d_mean",
+          "err_试验机组总加_28d_std",
+          "err_试验机组总加_28d_q10",
+          "err_试验机组总加_28d_q50",
+          "err_试验机组总加_28d_q90",
+          "err_直调负荷_28d_mean",
+          "err_直调负荷_28d_std",
+          "err_直调负荷_28d_q10",
+          "err_直调负荷_28d_q50",
+          "err_直调负荷_28d_q90",
+          "err_竞价空间_28d_mean",
+          "err_竞价空间_28d_std",
+          "err_竞价空间_28d_q10",
+          "err_竞价空间_28d_q50",
+          "err_竞价空间_28d_q90",
+          "err_新能源总加_28d_mean",
+          "err_新能源总加_28d_std",
+          "err_新能源总加_28d_q10",
+          "err_新能源总加_28d_q50",
+          "err_新能源总加_28d_q90",
+          "err_net_load_28d_mean",
+          "err_net_load_28d_std",
+          "err_net_load_28d_q10",
+          "err_net_load_28d_q90",
+          "err_renewable_adjusted_direct_28d_mean",
+          "delta_renewable_adjusted_direct_28d_mean",
+          "err_renewable_adjusted_direct_28d_std",
+          "delta_renewable_adjusted_direct_28d_std",
+          "err_renewable_adjusted_direct_28d_q10",
+          "delta_renewable_adjusted_direct_28d_q10",
+          "err_renewable_adjusted_direct_28d_q90",
+          "delta_renewable_adjusted_direct_28d_q90",
+          "uncert_地方电厂总加_low",
+          "uncert_地方电厂总加_mid",
+          "uncert_地方电厂总加_high",
+          "uncert_地方电厂总加_width",
+          "uncert_联络线受电负荷_low",
+          "uncert_联络线受电负荷_mid",
+          "uncert_联络线受电负荷_high",
+          "uncert_联络线受电负荷_width",
+          "uncert_风电总加_low",
+          "uncert_风电总加_mid",
+          "uncert_风电总加_high",
+          "uncert_风电总加_width",
+          "uncert_光伏总加_low",
+          "uncert_光伏总加_mid",
+          "uncert_光伏总加_high",
+          "uncert_光伏总加_width",
+          "uncert_核电总加_low",
+          "uncert_核电总加_mid",
+          "uncert_核电总加_high",
+          "uncert_核电总加_width",
+          "uncert_自备机组总加_low",
+          "uncert_自备机组总加_mid",
+          "uncert_自备机组总加_high",
+          "uncert_自备机组总加_width",
+          "uncert_试验机组总加_low",
+          "uncert_试验机组总加_mid",
+          "uncert_试验机组总加_high",
+          "uncert_试验机组总加_width",
+          "uncert_直调负荷_low",
+          "uncert_直调负荷_mid",
+          "uncert_直调负荷_high",
+          "uncert_直调负荷_width",
+          "uncert_竞价空间_low",
+          "uncert_竞价空间_mid",
+          "uncert_竞价空间_high",
+          "uncert_竞价空间_width",
+          "uncert_新能源总加_low",
+          "uncert_新能源总加_mid",
+          "uncert_新能源总加_high",
+          "uncert_新能源总加_width"
+        ],
+        "affected_keys": [
+          {
+            "hour_business": 1,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 2,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 3,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 4,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 5,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 6,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 7,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 8,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 9,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 10,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 11,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 12,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 13,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 14,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 15,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 16,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 17,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 18,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 19,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 20,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 21,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 22,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 23,
+            "target_day": "2026-08-15"
+          },
+          {
+            "hour_business": 24,
+            "target_day": "2026-08-15"
+          }
+        ],
+        "affected_source_dependency": [
+          "2026-08-15 actual fundamentals / realized forecast errors"
+        ],
+        "dependency_authority": "UPSTREAM_CANONICAL_BUILDER",
+        "dependency_closure_end": "2026-09-13",
+        "dependency_closure_start": "2026-08-17",
+        "dependency_evidence_status": "INFERRED_LEGACY",
+        "reason": "2026-08-15 actual anomaly propagated through 28-day declared upstream dependency window",
+        "resolution_source_sha256": null,
+        "status": "UNVERIFIED"
+      }
+    ]
+  },
+  "errors": [],
+  "feature_contract": {
+    "candidate_feature_count": 259,
+    "correction_closure_validation": "SYNTHETIC_VALIDATION_ONLY_NO_REAL_CORRECTIONS",
+    "d1_context_max_timestamp_audit": {
+      "column_present": true,
+      "cutoff_mismatch_days": [],
+      "missing_context_days": [
+        "2022-01-01"
+      ],
+      "nonmissing_context_max_timestamp": "2026-08-21T14:00:00",
+      "rule": "context_source_max_ds == target_day-1 14:00 when context exists",
+      "target_days_checked": 1695
+    },
+    "d1_context_registry_contract_pass": true,
+    "d1_post14_realized_as_feature": false,
+    "dependency_evidence_counts": {
+      "VERIFIED_CANONICAL": 15,
+      "VERIFIED_CANONICAL_UPSTREAM": 244
+    },
+    "dependency_evidence_levels_allowed": [
+      "VERIFIED_CANONICAL",
+      "VERIFIED_CANONICAL_UPSTREAM"
+    ],
+    "dependency_evidence_status": "VERIFIED_CANONICAL",
+    "dependency_registry_complete": true,
+    "dependency_registry_count": 259,
+    "extension_semantic_compatibility": "SYNTHETIC_VALIDATION_ONLY_NO_EXTENSIONS",
+    "f0_f9_feature_count": 244,
+    "f0_f9_group_counts": {
+      "F0": 11,
+      "F1": 12,
+      "F2": 10,
+      "F3": 11,
+      "F4": 12,
+      "F5": 82,
+      "F6": 40,
+      "F7": 24,
+      "F8": 14,
+      "F9": 28
+    },
+    "f10_feature_count": 15,
+    "future_vintage_columns_available_for_empirical_check": [],
+    "future_vintage_evidence_counts": {
+      "CONTRACT_INHERITED": 259
+    },
+    "future_vintage_inherited_contract_id": {
+      "contract_name": "DOC17_V1.3_FROZEN_FORECAST_CONTRACT",
+      "feature_groups_hash": "efc92c22ddbc84d1248f639e6364152ec9a89c55aae6483ff1abd3109e42d9e2",
+      "feature_registry_hash": "f06cfc1cb83bea08cec86fe4ed29431d18853fb5648e6b51f5eac49c0720b825",
+      "source_asset": "data/frozen_repro/slot_table.parquet",
+      "source_builder_version": "UNKNOWN_INHERITED",
+      "source_manifest_path": "data/frozen_repro/manifest.json",
+      "source_manifest_sha256": "8a68e6b8fec74fa45b1b6b467cfccae63a9a484e3c0811a0cf7beb825a2abcd1",
+      "source_schema_hash": "b5091d096aba5e99e0f42bbb3fdeb39c57376ead572125b287663017707810c6",
+      "source_sha256": "a1b86f956d9fb18a483d473cbc0334e1078097f6ef75274b2804488968a349ea"
+    },
+    "global_quarantine_removed": true,
+    "history_temporal_feature_count": 7,
+    "identity_contract_recorded": true,
+    "machine_readable_source_identity": true,
+    "quarantined_feature_names": [
+      "delta_renewable_adjusted_direct_28d_mean",
+      "delta_renewable_adjusted_direct_28d_q10",
+      "delta_renewable_adjusted_direct_28d_q90",
+      "delta_renewable_adjusted_direct_28d_std",
+      "err_net_load_28d_mean",
+      "err_net_load_28d_q10",
+      "err_net_load_28d_q90",
+      "err_net_load_28d_std",
+      "err_renewable_adjusted_direct_28d_mean",
+      "err_renewable_adjusted_direct_28d_q10",
+      "err_renewable_adjusted_direct_28d_q90",
+      "err_renewable_adjusted_direct_28d_std",
+      "err_光伏总加_28d_mean",
+      "err_光伏总加_28d_q10",
+      "err_光伏总加_28d_q50",
+      "err_光伏总加_28d_q90",
+      "err_光伏总加_28d_std",
+      "err_光伏总加_7d_mean",
+      "err_光伏总加_7d_std",
+      "err_地方电厂总加_28d_mean",
+      "err_地方电厂总加_28d_q10",
+      "err_地方电厂总加_28d_q50",
+      "err_地方电厂总加_28d_q90",
+      "err_地方电厂总加_28d_std",
+      "err_地方电厂总加_7d_mean",
+      "err_地方电厂总加_7d_std",
+      "err_新能源总加_28d_mean",
+      "err_新能源总加_28d_q10",
+      "err_新能源总加_28d_q50",
+      "err_新能源总加_28d_q90",
+      "err_新能源总加_28d_std",
+      "err_新能源总加_7d_mean",
+      "err_新能源总加_7d_std",
+      "err_核电总加_28d_mean",
+      "err_核电总加_28d_q10",
+      "err_核电总加_28d_q50",
+      "err_核电总加_28d_q90",
+      "err_核电总加_28d_std",
+      "err_核电总加_7d_mean",
+      "err_核电总加_7d_std",
+      "err_直调负荷_28d_mean",
+      "err_直调负荷_28d_q10",
+      "err_直调负荷_28d_q50",
+      "err_直调负荷_28d_q90",
+      "err_直调负荷_28d_std",
+      "err_直调负荷_7d_mean",
+      "err_直调负荷_7d_std",
+      "err_竞价空间_28d_mean",
+      "err_竞价空间_28d_q10",
+      "err_竞价空间_28d_q50",
+      "err_竞价空间_28d_q90",
+      "err_竞价空间_28d_std",
+      "err_竞价空间_7d_mean",
+      "err_竞价空间_7d_std",
+      "err_联络线受电负荷_28d_mean",
+      "err_联络线受电负荷_28d_q10",
+      "err_联络线受电负荷_28d_q50",
+      "err_联络线受电负荷_28d_q90",
+      "err_联络线受电负荷_28d_std",
+      "err_联络线受电负荷_7d_mean",
+      "err_联络线受电负荷_7d_std",
+      "err_自备机组总加_28d_mean",
+      "err_自备机组总加_28d_q10",
+      "err_自备机组总加_28d_q50",
+      "err_自备机组总加_28d_q90",
+      "err_自备机组总加_28d_std",
+      "err_自备机组总加_7d_mean",
+      "err_自备机组总加_7d_std",
+      "err_试验机组总加_28d_mean",
+      "err_试验机组总加_28d_q10",
+      "err_试验机组总加_28d_q50",
+      "err_试验机组总加_28d_q90",
+      "err_试验机组总加_28d_std",
+      "err_试验机组总加_7d_mean",
+      "err_试验机组总加_7d_std",
+      "err_风电总加_28d_mean",
+      "err_风电总加_28d_q10",
+      "err_风电总加_28d_q50",
+      "err_风电总加_28d_q90",
+      "err_风电总加_28d_std",
+      "err_风电总加_7d_mean",
+      "err_风电总加_7d_std",
+      "uncert_光伏总加_high",
+      "uncert_光伏总加_low",
+      "uncert_光伏总加_mid",
+      "uncert_光伏总加_width",
+      "uncert_地方电厂总加_high",
+      "uncert_地方电厂总加_low",
+      "uncert_地方电厂总加_mid",
+      "uncert_地方电厂总加_width",
+      "uncert_新能源总加_high",
+      "uncert_新能源总加_low",
+      "uncert_新能源总加_mid",
+      "uncert_新能源总加_width",
+      "uncert_核电总加_high",
+      "uncert_核电总加_low",
+      "uncert_核电总加_mid",
+      "uncert_核电总加_width",
+      "uncert_直调负荷_high",
+      "uncert_直调负荷_low",
+      "uncert_直调负荷_mid",
+      "uncert_直调负荷_width",
+      "uncert_竞价空间_high",
+      "uncert_竞价空间_low",
+      "uncert_竞价空间_mid",
+      "uncert_竞价空间_width",
+      "uncert_联络线受电负荷_high",
+      "uncert_联络线受电负荷_low",
+      "uncert_联络线受电负荷_mid",
+      "uncert_联络线受电负荷_width",
+      "uncert_自备机组总加_high",
+      "uncert_自备机组总加_low",
+      "uncert_自备机组总加_mid",
+      "uncert_自备机组总加_width",
+      "uncert_试验机组总加_high",
+      "uncert_试验机组总加_low",
+      "uncert_试验机组总加_mid",
+      "uncert_试验机组总加_width",
+      "uncert_风电总加_high",
+      "uncert_风电总加_low",
+      "uncert_风电总加_mid",
+      "uncert_风电总加_width"
+    ],
+    "source_asset_hashes_runtime_verified": true,
+    "source_identity": {
+      "contract_name": "DOC17_V1.3_FROZEN_FORECAST_CONTRACT",
+      "feature_groups_hash": "efc92c22ddbc84d1248f639e6364152ec9a89c55aae6483ff1abd3109e42d9e2",
+      "feature_registry_hash": "f06cfc1cb83bea08cec86fe4ed29431d18853fb5648e6b51f5eac49c0720b825",
+      "source_asset": "data/frozen_repro/slot_table.parquet",
+      "source_builder_version": "UNKNOWN_INHERITED",
+      "source_manifest_path": "data/frozen_repro/manifest.json",
+      "source_manifest_sha256": "8a68e6b8fec74fa45b1b6b467cfccae63a9a484e3c0811a0cf7beb825a2abcd1",
+      "source_schema_hash": "b5091d096aba5e99e0f42bbb3fdeb39c57376ead572125b287663017707810c6",
+      "source_sha256": "a1b86f956d9fb18a483d473cbc0334e1078097f6ef75274b2804488968a349ea"
+    },
+    "source_schema_hash_runtime_verification": {
+      "declared_in_doc17": "b5091d096aba5e99e0f42bbb3fdeb39c57376ead572125b287663017707810c6",
+      "runtime_algorithm": "sha256(utf8(json.dumps([(str(column),str(dtype)),...],ensure_ascii=False,separators=(',',':'))))",
+      "runtime_equals_declared": true,
+      "runtime_hash": "b5091d096aba5e99e0f42bbb3fdeb39c57376ead572125b287663017707810c6",
+      "status": "VERIFIED"
+    },
+    "target_day_actual_as_feature": false,
+    "target_day_spread_as_feature": false,
+    "target_forecast_registry_contract_pass": true,
+    "unaffected_f7_f9_not_quarantined": true,
+    "upstream_builder_evidence": {
+      "feature_count": 244,
+      "lineage": {
+        "augment_numeric_cube_v2.py": "ff411286ca5172a99bd779170bebd7f2753ff158fa363fbef2176089f3fd6a7d",
+        "build_numeric_spread_cube.py": "372d63f98e1650ebcf7c32446daa08d59bd7eeb35056a02cc874510445b76663",
+        "frozen_source_snapshot/build_feature_cube.py": "9c28f4c932bc7ece38d93ad0aff4d2079d40cfcd650c7199e9c07641b2ae48fb"
+      },
+      "lineage_assets": {
+        "numeric_v1": {
+          "feature_groups.json": "ab5e79deb1accf4c8db45604dd44070c7f2a4a4027d43864bcfacfbefa72ba39",
+          "feature_registry.json": "22c4879bc75c4bd5f5242900d4050460f5db789d66a409cf2979870bbd87df87",
+          "manifest.json": "6eb0816c5c30802d76936761a890d8dedd9bd8c0d2889a4a04c76c3c3d8d78c6",
+          "slot_table.parquet": "c306576b56a11d01697eeab2bc8326bb23b75077237a5559cbd41c963fe604aa"
+        },
+        "numeric_v2": {
+          "feature_groups.json": "efc92c22ddbc84d1248f639e6364152ec9a89c55aae6483ff1abd3109e42d9e2",
+          "feature_registry.json": "f06cfc1cb83bea08cec86fe4ed29431d18853fb5648e6b51f5eac49c0720b825",
+          "manifest.json": "8a68e6b8fec74fa45b1b6b467cfccae63a9a484e3c0811a0cf7beb825a2abcd1",
+          "slot_table.parquet": "a1b86f956d9fb18a483d473cbc0334e1078097f6ef75274b2804488968a349ea"
+        }
+      },
+      "status": "VERIFIED"
+    }
+  },
+  "gate": "SOURCE_GATE",
+  "label_contract": {
+    "complete_label_cutoff": "D-2 or earlier",
+    "d1_post14_realized_as_feature": false,
+    "direction_mismatch_rows": 0,
+    "forecast_origin": "D-1 14:00",
+    "nonfinite_target_rows": 0,
+    "target": "DA-RT",
+    "target_day_DA_as_feature": false,
+    "target_day_actual_as_feature": false,
+    "zero_policy": "Y>0 positive; Y<=0 non-positive"
+  },
+  "merged_source": {
+    "append_correction_mechanism": "IMPLEMENTED; append duplicates FAIL; corrections require exact key declaration",
+    "complete_target_through": "2026-08-21",
+    "contiguous_complete_target_through": "2026-08-21",
+    "date_max": "2026-08-22",
+    "date_min": "2022-01-01",
+    "duplicate_key_count": 0,
+    "duplicate_key_policy": "append duplicates fail; correction requires exact declared keys",
+    "duplicate_timestamp_count": 0,
+    "extension_records": [],
+    "extension_sha256": [],
+    "incomplete_target_days": [
+      "2026-08-22"
+    ],
+    "merge_policy": "append_then_exact_key_correction; base file remains immutable",
+    "missing_canonical_keys_count": 10,
+    "missing_canonical_keys_hash": "06608d65aaae3c934f1668fd6e0dc447fbf69333ef7be2251f26b6e1ab17fbe0",
+    "partial_days": {
+      "2026-08-22": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "rows": 40670,
+    "sha256": "72f5b2dd9571536abbd52a64d666d4d80351953012cd96ff2c4d326a94d5f32d",
+    "source_priority": "correction > append > base",
+    "timestamp_mapping_mismatches": 0
+  },
+  "schema": "spread24_source_gate_v1.3",
+  "status": "PASS",
+  "training_contract_readiness": {
+    "direction_class_weights": "BASE_TRAIN-only; Stage B freezes Stage-A weights",
+    "empty_severity_mask": "only average classes present in batch; never mean an empty mask",
+    "target_scale": "BASE_TRAIN-only IQR(Y)/1.349, lower bounded by eps; Stage B freezes Stage-A scale"
+  }
+}

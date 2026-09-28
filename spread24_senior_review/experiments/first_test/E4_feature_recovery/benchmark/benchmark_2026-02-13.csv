@@ -1,0 +1,4 @@
+arm,feature_recovery_profile,raw,balanced,auc,brier,parameter_count,best_epoch,stop_epoch,selected_feature_count,strong_count,weak_count,recovered_count,recovered_role,experiment_feature_profile_sha256,selector_sha256,wall_seconds,device,amp
+F0,selected222 (reuse Q2),0.5833333333333334,,,,383252,2,17,222,211,11,0,,,ed348cfd9fd911bc675d7fd920485b1a748c159a3e0a395b3af02af01015092f,17.239,cuda,True
+F1,literature240,0.5833333333333334,,,,406436,3,18,240,211,29,18,Weak,1dc70d3a7b9c1c98136e6cc5b4303542d1594a2226c2ce92f92657332a972385,ed348cfd9fd911bc675d7fd920485b1a748c159a3e0a395b3af02af01015092f,24.059,cuda,True
+F2,all259,0.625,,,,430908,5,20,259,211,48,37,Weak,32e9f2dd4800e3c2e199f9c03f20133d10f73f2f61a1f2526db3b96ad0f6576e,ed348cfd9fd911bc675d7fd920485b1a748c159a3e0a395b3af02af01015092f,33.696,cuda,True

@@ -1,0 +1,7 @@
+arm,direction_fusion_alpha,reproduces,run_dir,predictions_parquet_sha256_match,n_rows,n_numeric_columns_compared,max_abs_delta_predictions,n_metric_scalars_compared,max_abs_delta_metrics,within_1e-9,manifest_direction_fusion_alpha,manifest_alpha_matches_arm,n_epoch_points,distinct_alpha_dir_values,inert_alpha_dir_constant,immobile,gradient_ownership,alpha_receives_no_direction_gradient
+F00,0.0,E2-A tabular_only,D:\作业\大创_挑战杯_互联网\大学生创新创业计划\大创实现\其他资料\electricity_forecast_lab\spread24_senior_review\src\TafM_改进源码\outputs\tabm_v21\experiments\direction_first\objective_modes\2026-02-13_dir_dirfirst_van_fa000_20260925T114533904582Z,True,24.0,13.0,0.0,15.0,0.0,True,0.0,True,17,1,0.800000011920929,True,"{'L_dir_tab_dir_live': '2/2', 'L_dir_time_dir_live': '0/2', 'L_dir_a_dir_live': '0/1'}",True
+F100,1.0,E2-A temporal_only,D:\作业\大创_挑战杯_互联网\大学生创新创业计划\大创实现\其他资料\electricity_forecast_lab\spread24_senior_review\src\TafM_改进源码\outputs\tabm_v21\experiments\direction_first\objective_modes\2026-02-13_dir_dirfirst_van_fa100_20260925T114656312535Z,True,24.0,13.0,0.0,15.0,0.0,True,1.0,True,18,1,0.800000011920929,True,"{'L_dir_tab_dir_live': '0/2', 'L_dir_time_dir_live': '2/2', 'L_dir_a_dir_live': '0/1'}",True
+F20,0.2,fresh fixed-alpha arm,,,,,,,,,0.2,True,17,1,0.800000011920929,True,,
+F40,0.4,fresh fixed-alpha arm,,,,,,,,,0.4,True,18,1,0.800000011920929,True,,
+F60,0.6,fresh fixed-alpha arm,,,,,,,,,0.6,True,18,1,0.800000011920929,True,,
+F80,0.8,fresh fixed-alpha arm,,,,,,,,,0.8,True,18,1,0.800000011920929,True,,

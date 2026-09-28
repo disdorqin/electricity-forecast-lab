@@ -1,0 +1,29 @@
+{
+  "N0": {
+    "admissible": true,
+    "checks": {
+      "balanced": true,
+      "positive_recall": true,
+      "one_class_days": true,
+      "positive_recall_zero_days": true
+    }
+  },
+  "N1": {
+    "admissible": false,
+    "checks": {
+      "balanced": false,
+      "positive_recall": false,
+      "one_class_days": true,
+      "positive_recall_zero_days": true
+    }
+  },
+  "N2": {
+    "admissible": false,
+    "checks": {
+      "balanced": false,
+      "positive_recall": true,
+      "one_class_days": true,
+      "positive_recall_zero_days": true
+    }
+  }
+}

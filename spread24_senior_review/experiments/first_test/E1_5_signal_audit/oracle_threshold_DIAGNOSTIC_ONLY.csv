@@ -1,0 +1,10 @@
+model,row,threshold,raw_direction_accuracy,balanced_accuracy,positive_recall,nonpositive_recall,predicted_positive_fraction,n_tied_optimal_thresholds,LEAKY_DIAGNOSTIC_ONLY,NOT_A_MODEL_RESULT,NOT_FOR_PROMOTION
+T0,threshold_0.5,0.5,0.534226,0.505968,0.404959,0.606977,0.397321,1,True,True,True
+T0,oracle_raw,0.896,0.641369,0.502066,0.004132,1.0,0.001488,50,True,True,True
+T0,oracle_balanced,0.366,0.489583,0.539737,0.719008,0.360465,0.668155,1,True,True,True
+T1,threshold_0.5,0.5,0.566964,0.517999,0.342975,0.693023,0.31994,1,True,True,True
+T1,oracle_raw,0.773,0.644345,0.506198,0.012397,1.0,0.004464,33,True,True,True
+T1,oracle_balanced,0.364,0.502976,0.569172,0.805785,0.332558,0.717262,1,True,True,True
+T2,threshold_0.5,0.5,0.578869,0.527302,0.342975,0.711628,0.308036,1,True,True,True
+T2,oracle_raw,0.627,0.645833,0.511878,0.033058,0.990698,0.017857,1,True,True,True
+T2,oracle_balanced,0.383,0.52381,0.564674,0.710744,0.418605,0.627976,1,True,True,True

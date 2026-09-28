@@ -1,0 +1,18 @@
+[
+  {
+    "check": "current_fixed_08",
+    "n_numeric_columns_compared": 13,
+    "max_abs_delta": 0.0,
+    "n_metrics_compared": 143,
+    "max_abs_delta_metrics": 0.0,
+    "within_1e-9": true
+  },
+  {
+    "check": "default_no_flag",
+    "n_numeric_columns_compared": 13,
+    "max_abs_delta": 0.0,
+    "n_metrics_compared": 143,
+    "max_abs_delta_metrics": 0.0,
+    "within_1e-9": true
+  }
+]

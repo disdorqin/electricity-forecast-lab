@@ -1,0 +1,12 @@
+--- --stage-a-monitor-days 0 --direction-readout-mode segment_heads --objective-mode dir_only --direction-fusion-alpha 0.8 ---
+ValueError: stage_a_monitor_days/stage_a_history_window_days must be >= 1
+exit=2
+--- --stage-a-history-window-days 365 --direction-readout-mode segment_heads --objective-mode dir_only --direction-fusion-alpha 0.8 ---
+ValueError: stage_a_history_window_days requires stage_a_monitor_days
+exit=2
+--- --stage-a-monitor-days 60 --direction-readout-mode shared --objective-mode dir_only --direction-fusion-alpha 0.8 ---
+ValueError: experiment-only stage_a_monitor_days requires the E3-A route: dir_only/stage_a/full_current/current routes/all roles/canonical encoding/segment_heads/fixed alpha=.8
+exit=2
+--- --stage-a-monitor-days 60 --direction-readout-mode segment_heads --objective-mode dir_only --direction-fusion-alpha 0.5 ---
+ValueError: non-shared direction_readout_mode requires dir_only/full_current/current routes, all roles, canonical encoding, fixed alpha=.8 and train_mode=stage_a
+exit=2

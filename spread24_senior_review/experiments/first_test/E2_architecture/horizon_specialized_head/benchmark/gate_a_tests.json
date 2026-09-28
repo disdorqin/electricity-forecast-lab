@@ -1,0 +1,10 @@
+{
+  "baseline_94": 94,
+  "full_suite": 174,
+  "focused": 9,
+  "previous_e2_tests": 71,
+  "command_full": "epf-2\\python.exe -m pytest -q -p no:cacheprovider \"src/TafM_改进源码/tests\" tests/test_data_contract.py tests/test_leakage.py --ignore=tests/test_smoke.py",
+  "command_baseline": "same, plus --ignore for test_architecture_mode.py test_e2_c1_tabular_routing.py test_direction_fusion_alpha.py test_e2_d1_numeric_encoding.py test_e2_e1_horizon_readout.py",
+  "fail_closed_exit_code": 2,
+  "focused_file": "src/TafM_改进源码/tests/test_e2_e1_horizon_readout.py"
+}

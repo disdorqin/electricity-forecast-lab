@@ -1,0 +1,23 @@
+{
+  "arms": [
+    "P0",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "P2_feature_count": 5,
+  "P3_feature_count": 14,
+  "P1_checkpoint_reproduction_max_abs_delta": 0.0,
+  "same_checkpoint_for_P1_P2_P3": true,
+  "calibrator_days": 90,
+  "threshold": 0.5,
+  "stacker_contract": {
+    "loss": "unweighted BCE",
+    "l2": 0.001,
+    "max_iter": 100,
+    "optimizer": "deterministic LBFGS",
+    "base_logit_init": 1.0,
+    "other_init": 0.0,
+    "bias_init": 0.0
+  }
+}

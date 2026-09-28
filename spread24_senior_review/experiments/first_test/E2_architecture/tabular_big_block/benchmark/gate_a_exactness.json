@@ -1,0 +1,20 @@
+[
+  {
+    "check": "current_fixed_0.8",
+    "artifact_run_dir": "D:\\作业\\大创_挑战杯_互联网\\大学生创新创业计划\\大创实现\\其他资料\\electricity_forecast_lab\\spread24_senior_review\\src\\TafM_改进源码\\outputs\\tabm_v21\\experiments\\direction_first\\objective_modes\\2026-02-13_dir_dirfirst_van_fa080_20260925T114638979303Z",
+    "n_numeric_columns_compared": 13,
+    "max_abs_delta": 0.0,
+    "n_metrics_compared": 143,
+    "max_abs_delta_metrics": 0.0,
+    "within_1e-9": true
+  },
+  {
+    "check": "default_no_flag",
+    "artifact_run_dir": "D:\\作业\\大创_挑战杯_互联网\\大学生创新创业计划\\大创实现\\其他资料\\electricity_forecast_lab\\spread24_senior_review\\src\\TafM_改进源码\\outputs\\tabm_v21\\experiments\\direction_first\\objective_modes\\2026-02-13_dir_dirfirst_van_fa080_20260925T114638979303Z",
+    "n_numeric_columns_compared": 13,
+    "max_abs_delta": 0.0,
+    "n_metrics_compared": 143,
+    "max_abs_delta_metrics": 0.0,
+    "within_1e-9": true
+  }
+]

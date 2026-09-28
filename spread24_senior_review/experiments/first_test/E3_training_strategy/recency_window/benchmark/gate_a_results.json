@@ -1,0 +1,96 @@
+{
+  "benchmark_day": "2026-02-13",
+  "checks": {
+    "1_T0_reproduces_Q2": true,
+    "2_monitor_newest60_Dminus2": true,
+    "3_base_ends_before_monitor": true,
+    "4_base_count_exact": true,
+    "5_no_overlap_no_leak": true,
+    "6_preprocessing_fit_equals_base": true,
+    "8_q2_route_and_k8": true,
+    "7_frozen_hashes": true,
+    "finite": true
+  },
+  "splits": {
+    "T1": {
+      "monitor": {
+        "count": 60,
+        "start": "2025-12-14",
+        "end": "2026-02-11"
+      },
+      "base": {
+        "count": 1435,
+        "start": "2022-01-09",
+        "end": "2025-12-13"
+      },
+      "eligible": {
+        "count": 1495,
+        "start": "2022-01-09",
+        "end": "2026-02-11"
+      },
+      "monitor_exact_newest60_Dminus2": true,
+      "base_adjacent_before_monitor": true,
+      "base_count_exact": true,
+      "no_overlap": true,
+      "no_target_or_Dminus1": true,
+      "preprocessing_fit_equals_base": true,
+      "q2_route_and_k8": true,
+      "preprocessing_fit_day_start": "2022-01-09",
+      "preprocessing_fit_day_end": "2025-12-13"
+    },
+    "T2": {
+      "monitor": {
+        "count": 60,
+        "start": "2025-12-14",
+        "end": "2026-02-11"
+      },
+      "base": {
+        "count": 365,
+        "start": "2024-12-14",
+        "end": "2025-12-13"
+      },
+      "eligible": {
+        "count": 1495,
+        "start": "2022-01-09",
+        "end": "2026-02-11"
+      },
+      "monitor_exact_newest60_Dminus2": true,
+      "base_adjacent_before_monitor": true,
+      "base_count_exact": true,
+      "no_overlap": true,
+      "no_target_or_Dminus1": true,
+      "preprocessing_fit_equals_base": true,
+      "q2_route_and_k8": true,
+      "preprocessing_fit_day_start": "2024-12-14",
+      "preprocessing_fit_day_end": "2025-12-13"
+    },
+    "T3": {
+      "monitor": {
+        "count": 60,
+        "start": "2025-12-14",
+        "end": "2026-02-11"
+      },
+      "base": {
+        "count": 1095,
+        "start": "2022-12-15",
+        "end": "2025-12-13"
+      },
+      "eligible": {
+        "count": 1495,
+        "start": "2022-01-09",
+        "end": "2026-02-11"
+      },
+      "monitor_exact_newest60_Dminus2": true,
+      "base_adjacent_before_monitor": true,
+      "base_count_exact": true,
+      "no_overlap": true,
+      "no_target_or_Dminus1": true,
+      "preprocessing_fit_equals_base": true,
+      "q2_route_and_k8": true,
+      "preprocessing_fit_day_start": "2022-12-15",
+      "preprocessing_fit_day_end": "2025-12-13"
+    }
+  },
+  "delta_T0_vs_Q2": 0.0,
+  "all_gate_a_pre_tests_pass": true
+}

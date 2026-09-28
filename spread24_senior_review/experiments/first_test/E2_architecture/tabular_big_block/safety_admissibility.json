@@ -1,0 +1,41 @@
+{
+  "C0": {
+    "admissible": true,
+    "checks": {
+      "balanced": true,
+      "positive_recall": true,
+      "one_class_days": true,
+      "positive_recall_zero_days": true
+    },
+    "balanced_delta": 0.0,
+    "positive_recall_delta": 0.0,
+    "one_class_delta": 0,
+    "positive_recall_zero_delta": 0
+  },
+  "C1": {
+    "admissible": false,
+    "checks": {
+      "balanced": false,
+      "positive_recall": true,
+      "one_class_days": true,
+      "positive_recall_zero_days": true
+    },
+    "balanced_delta": -0.01614453200076882,
+    "positive_recall_delta": -0.020661157024793375,
+    "one_class_delta": 0,
+    "positive_recall_zero_delta": 1
+  },
+  "C2": {
+    "admissible": false,
+    "checks": {
+      "balanced": false,
+      "positive_recall": true,
+      "one_class_days": true,
+      "positive_recall_zero_days": true
+    },
+    "balanced_delta": -0.03296175283490299,
+    "positive_recall_delta": 0.06198347107438018,
+    "one_class_delta": -3,
+    "positive_recall_zero_delta": -4
+  }
+}

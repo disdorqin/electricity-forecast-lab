@@ -1,0 +1,9 @@
+numpy
+pandas
+pyarrow
+lightgbm
+PyYAML
+pytest
+# Import-only for the frozen selector (shap.TreeExplainer, construction-time shadow importance).
+# Pinned to the last release that keeps numpy 1.x; >=0.50 forces a numpy 2 upgrade.
+shap==0.49.1

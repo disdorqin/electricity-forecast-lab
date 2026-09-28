@@ -1,0 +1,79 @@
+{
+  "by_arm": {
+    "N0": {
+      "arm": "N0",
+      "scope": "formal",
+      "target_day": "2026-02-12",
+      "numeric_encoding_mode": "canonical",
+      "encoded_feature_dim": 9,
+      "strong_feature_count": 211,
+      "weak_feature_count": 11,
+      "strong_tabm_input_dim": 1899,
+      "weak_mlp_input_dim": 99,
+      "parameter_count": 382724
+    },
+    "N1": {
+      "arm": "N1",
+      "scope": "formal",
+      "target_day": "2026-02-12",
+      "numeric_encoding_mode": "raw_only",
+      "encoded_feature_dim": 1,
+      "strong_feature_count": 211,
+      "weak_feature_count": 11,
+      "strong_tabm_input_dim": 211,
+      "weak_mlp_input_dim": 11,
+      "parameter_count": 111700
+    },
+    "N2": {
+      "arm": "N2",
+      "scope": "formal",
+      "target_day": "2026-02-12",
+      "numeric_encoding_mode": "ple_only",
+      "encoded_feature_dim": 8,
+      "strong_feature_count": 211,
+      "weak_feature_count": 11,
+      "strong_tabm_input_dim": 1688,
+      "weak_mlp_input_dim": 88,
+      "parameter_count": 352620
+    }
+  },
+  "benchmark": [
+    {
+      "arm": "N0",
+      "scope": "benchmark",
+      "target_day": "2026-02-13",
+      "numeric_encoding_mode": "canonical",
+      "encoded_feature_dim": 9,
+      "strong_feature_count": 211,
+      "weak_feature_count": 11,
+      "strong_tabm_input_dim": 1899,
+      "weak_mlp_input_dim": 99,
+      "parameter_count": 382724
+    },
+    {
+      "arm": "N1",
+      "scope": "benchmark",
+      "target_day": "2026-02-13",
+      "numeric_encoding_mode": "raw_only",
+      "encoded_feature_dim": 1,
+      "strong_feature_count": 211,
+      "weak_feature_count": 11,
+      "strong_tabm_input_dim": 211,
+      "weak_mlp_input_dim": 11,
+      "parameter_count": 111700
+    },
+    {
+      "arm": "N2",
+      "scope": "benchmark",
+      "target_day": "2026-02-13",
+      "numeric_encoding_mode": "ple_only",
+      "encoded_feature_dim": 8,
+      "strong_feature_count": 211,
+      "weak_feature_count": 11,
+      "strong_tabm_input_dim": 1688,
+      "weak_mlp_input_dim": 88,
+      "parameter_count": 352620
+    }
+  ],
+  "rows": 87
+}

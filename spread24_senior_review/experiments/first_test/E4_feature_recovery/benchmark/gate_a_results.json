@@ -1,0 +1,134 @@
+[
+  {
+    "item": 2,
+    "description": "default/no-flag selected222 is bit-identical to frozen selector",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 3,
+    "description": "selected222: selected=222 strong=211 weak=11 recovered=0",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 4,
+    "description": "literature240: selected=240 strong=211 weak=29 recovered=18",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 5,
+    "description": "all259: selected=259 strong=211 weak=48 recovered=37",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 6,
+    "description": "literature240: selected features follow canonical SequenceStore registry order",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 7,
+    "description": "literature240: selected_indices exactly correspond to that order",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 6,
+    "description": "all259: selected features follow canonical SequenceStore registry order",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 7,
+    "description": "all259: selected_indices exactly correspond to that order",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 8,
+    "description": "frozen selector file/sha unchanged on disk",
+    "pass": true,
+    "detail": "disk=ed348cfd9fd9 frozen=ed348cfd9fd9"
+  },
+  {
+    "item": 9,
+    "description": "experiment feature profile SHA recorded separately from frozen selector SHA",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 10,
+    "description": "all recovered features are original frozen-selector role Noise",
+    "pass": true,
+    "detail": "lit18_all_noise=True"
+  },
+  {
+    "item": 11,
+    "description": "recovered features are Weak only in the experiment manifest",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 12,
+    "description": "all 28 target days eligible in all profiles",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 13,
+    "description": "identical eligible-index SETS across F0/F1/F2 for all 28 days",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 14,
+    "description": "preprocessing fits BASE only (fit ends before target, BASE_TRAIN present) for every fresh run",
+    "pass": true,
+    "detail": "56 fresh records"
+  },
+  {
+    "item": 15,
+    "description": "no label dependency / target truth / D-1 actual in recovered features",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 16,
+    "description": "source/sequence/config hashes frozen across fresh runs",
+    "pass": true,
+    "detail": "config=8c981156cecf"
+  },
+  {
+    "item": 17,
+    "description": "Q2 segment heads (direction_readout_mode=segment_heads) + k8 preserved in every fresh run",
+    "pass": true,
+    "detail": "cfg.k=8"
+  },
+  {
+    "item": 18,
+    "description": "no postprocess/class-weight/structured decoder active",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": 20,
+    "description": "incompatible profile combinations fail closed",
+    "pass": true,
+    "detail": "0 non-raising cases"
+  },
+  {
+    "item": 19,
+    "description": "canonical94 + all prior E2/E3/E4 + focused E4-B tests PASS",
+    "pass": true,
+    "detail": "passed=203/203"
+  },
+  {
+    "item": 1,
+    "description": "selected222 (F0) reproduces saved Q2 benchmark Raw=0.6086 (tolerance 1e-4)",
+    "pass": true,
+    "detail": "F0_raw=0.608631"
+  }
+]

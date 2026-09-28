@@ -1,0 +1,9 @@
+{
+  "A1_tabular_only__L_dir_blocked_from_temporal": true,
+  "A1_tabular_only__L_mag_still_reaches_temporal": true,
+  "A1_tabular_only__L_dir_reaches_tabular": true,
+  "A2_temporal_only__L_dir_blocked_from_tabular": true,
+  "A2_temporal_only__L_mag_still_reaches_tabular": true,
+  "A2_temporal_only__L_dir_reaches_temporal": true,
+  "A0_full_current__L_dir_reaches_both": true
+}

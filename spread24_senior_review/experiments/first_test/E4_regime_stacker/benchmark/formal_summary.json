@@ -1,0 +1,366 @@
+{
+  "signal": "SPLIT_COST_DOMINATES",
+  "flags": {
+    "gain_vs_P0": {
+      "P0": 0.0,
+      "P1": -0.025297619047618958,
+      "P2": -0.017857142857142794,
+      "P3": -0.023809523809523725
+    },
+    "slots_vs_P0": {
+      "P0": 0,
+      "P1": -17,
+      "P2": -12,
+      "P3": -16
+    },
+    "safe": {
+      "P0": true,
+      "P1": false,
+      "P2": false,
+      "P3": false
+    },
+    "P2_better_than_P1": false,
+    "P3_better_than_P1": false,
+    "P3_better_than_P2": false,
+    "P3_better_than_P0": false,
+    "P1_worse_than_P0": true,
+    "P2_worse_than_P1": false,
+    "P3_worse_than_P1": false
+  },
+  "overall": [
+    {
+      "arm": "P0",
+      "scope": "overall",
+      "n_slots": 672,
+      "n_days": 28,
+      "raw": 0.6086309523809523,
+      "balanced": 0.5424274457044014,
+      "positive_recall": 0.30578512396694213,
+      "negative_recall": 0.7790697674418605,
+      "auc": 0.5911493369210071,
+      "brier": 0.2296564248688035,
+      "predicted_positive_fraction": 0.25148809523809523,
+      "true_positive_fraction": 0.3601190476190476,
+      "one_class_days": 2,
+      "positive_recall_zero_days": 8,
+      "negative_recall_zero_days": 0,
+      "min_window_raw": 0.5595238095238095,
+      "window_raw_std": 0.05972807214401632
+    },
+    {
+      "arm": "P1",
+      "scope": "overall",
+      "n_slots": 672,
+      "n_days": 28,
+      "raw": 0.5833333333333334,
+      "balanced": 0.5280799538727657,
+      "positive_recall": 0.3305785123966942,
+      "negative_recall": 0.7255813953488373,
+      "auc": 0.5836921007111282,
+      "brier": 0.23277513493644722,
+      "predicted_positive_fraction": 0.29464285714285715,
+      "true_positive_fraction": 0.3601190476190476,
+      "one_class_days": 1,
+      "positive_recall_zero_days": 5,
+      "negative_recall_zero_days": 1,
+      "min_window_raw": 0.5178571428571429,
+      "window_raw_std": 0.06954358003302333
+    },
+    {
+      "arm": "P2",
+      "scope": "overall",
+      "n_slots": 672,
+      "n_days": 28,
+      "raw": 0.5907738095238095,
+      "balanced": 0.48150105708245244,
+      "positive_recall": 0.09090909090909091,
+      "negative_recall": 0.872093023255814,
+      "auc": 0.5531231981549106,
+      "brier": 0.2338550030108389,
+      "predicted_positive_fraction": 0.11458333333333333,
+      "true_positive_fraction": 0.3601190476190476,
+      "one_class_days": 11,
+      "positive_recall_zero_days": 18,
+      "negative_recall_zero_days": 0,
+      "min_window_raw": 0.47619047619047616,
+      "window_raw_std": 0.07719471636513656
+    },
+    {
+      "arm": "P3",
+      "scope": "overall",
+      "n_slots": 672,
+      "n_days": 28,
+      "raw": 0.5848214285714286,
+      "balanced": 0.5274360945608303,
+      "positive_recall": 0.32231404958677684,
+      "negative_recall": 0.7325581395348837,
+      "auc": 0.5276955602536998,
+      "brier": 0.2437825913673063,
+      "predicted_positive_fraction": 0.28720238095238093,
+      "true_positive_fraction": 0.3601190476190476,
+      "one_class_days": 7,
+      "positive_recall_zero_days": 11,
+      "negative_recall_zero_days": 0,
+      "min_window_raw": 0.5476190476190477,
+      "window_raw_std": 0.026744346362516994
+    }
+  ],
+  "paired": [
+    {
+      "comparison": "P1-P0",
+      "mean_delta_raw": -0.025297619047619048,
+      "raw_ci_low": -0.05059523809523809,
+      "raw_ci_high": -0.004464285714285714,
+      "raw_ci_excludes_zero": true,
+      "raw_W_T_L": "1/22/5",
+      "mean_delta_balanced": -0.013738569283682061,
+      "balanced_ci_low": -0.032917911766595975,
+      "balanced_ci_high": 0.001646036711826183,
+      "window_delta_raw_signs": "[-1.0, -1.0, -1.0, -1.0]"
+    },
+    {
+      "comparison": "P2-P1",
+      "mean_delta_raw": 0.007440476190476196,
+      "raw_ci_low": -0.049107142857142835,
+      "raw_ci_high": 0.06101190476190476,
+      "raw_ci_excludes_zero": false,
+      "raw_W_T_L": "13/4/11",
+      "mean_delta_balanced": -0.02875737060985387,
+      "balanced_ci_low": -0.08596344734727904,
+      "balanced_ci_high": 0.024712087101050034,
+      "window_delta_raw_signs": "[-1.0, -1.0, 1.0, 1.0]"
+    },
+    {
+      "comparison": "P3-P1",
+      "mean_delta_raw": 0.0014880952380952408,
+      "raw_ci_low": -0.06547619047619048,
+      "raw_ci_high": 0.06845238095238095,
+      "raw_ci_excludes_zero": false,
+      "raw_W_T_L": "12/3/13",
+      "mean_delta_balanced": 0.03683143305142276,
+      "balanced_ci_low": -0.01992114210518079,
+      "balanced_ci_high": 0.09615016007249685,
+      "window_delta_raw_signs": "[-1.0, 1.0, 1.0, 1.0]"
+    },
+    {
+      "comparison": "P2-P0",
+      "mean_delta_raw": -0.01785714285714285,
+      "raw_ci_low": -0.06845238095238093,
+      "raw_ci_high": 0.031250000000000014,
+      "raw_ci_excludes_zero": false,
+      "raw_W_T_L": "11/4/13",
+      "mean_delta_balanced": -0.04249593989353596,
+      "balanced_ci_low": -0.0936647300030332,
+      "balanced_ci_high": 0.0016910638336535395,
+      "window_delta_raw_signs": "[-1.0, -1.0, 1.0, 1.0]"
+    },
+    {
+      "comparison": "P3-P0",
+      "mean_delta_raw": -0.02380952380952381,
+      "raw_ci_low": -0.08630952380952382,
+      "raw_ci_high": 0.041666666666666664,
+      "raw_ci_excludes_zero": false,
+      "raw_W_T_L": "12/2/14",
+      "mean_delta_balanced": 0.023092863767740685,
+      "balanced_ci_low": -0.03139060419399942,
+      "balanced_ci_high": 0.07823315836800558,
+      "window_delta_raw_signs": "[-1.0, -1.0, 1.0, 1.0]"
+    },
+    {
+      "comparison": "P3-P2",
+      "mean_delta_raw": -0.005952380952380957,
+      "raw_ci_low": -0.06845238095238096,
+      "raw_ci_high": 0.05803571428571429,
+      "raw_ci_excludes_zero": false,
+      "raw_W_T_L": "13/3/12",
+      "mean_delta_balanced": 0.06558880366127663,
+      "balanced_ci_low": -0.0021886228706936564,
+      "balanced_ci_high": 0.1367209188689064,
+      "window_delta_raw_signs": "[-1.0, 1.0, 1.0, -1.0]"
+    }
+  ],
+  "safety": {
+    "P0": {
+      "admissible": true,
+      "checks": {
+        "balanced": true,
+        "positive_recall": true,
+        "one_class_days": true,
+        "positive_recall_zero_days": true
+      }
+    },
+    "P1": {
+      "admissible": false,
+      "checks": {
+        "balanced": false,
+        "positive_recall": true,
+        "one_class_days": true,
+        "positive_recall_zero_days": true
+      }
+    },
+    "P2": {
+      "admissible": false,
+      "checks": {
+        "balanced": false,
+        "positive_recall": false,
+        "one_class_days": false,
+        "positive_recall_zero_days": false
+      }
+    },
+    "P3": {
+      "admissible": false,
+      "checks": {
+        "balanced": false,
+        "positive_recall": true,
+        "one_class_days": false,
+        "positive_recall_zero_days": false
+      }
+    }
+  },
+  "slot_gain": [
+    {
+      "arm": "P0",
+      "scope": "overall",
+      "correct_slots_arm": 409,
+      "correct_slots_P0": 409,
+      "delta_correct_slots": 0,
+      "n_slots": 672,
+      "delta_slots_per_day": 0.0
+    },
+    {
+      "arm": "P0",
+      "scope": "H1",
+      "correct_slots_arm": 116,
+      "correct_slots_P0": 116,
+      "delta_correct_slots": 0,
+      "n_slots": 224,
+      "delta_slots_per_day": 0.0
+    },
+    {
+      "arm": "P0",
+      "scope": "H2",
+      "correct_slots_arm": 155,
+      "correct_slots_P0": 155,
+      "delta_correct_slots": 0,
+      "n_slots": 224,
+      "delta_slots_per_day": 0.0
+    },
+    {
+      "arm": "P0",
+      "scope": "H3",
+      "correct_slots_arm": 138,
+      "correct_slots_P0": 138,
+      "delta_correct_slots": 0,
+      "n_slots": 224,
+      "delta_slots_per_day": 0.0
+    },
+    {
+      "arm": "P1",
+      "scope": "overall",
+      "correct_slots_arm": 392,
+      "correct_slots_P0": 409,
+      "delta_correct_slots": -17,
+      "n_slots": 672,
+      "delta_slots_per_day": -0.6071428571428571
+    },
+    {
+      "arm": "P1",
+      "scope": "H1",
+      "correct_slots_arm": 102,
+      "correct_slots_P0": 116,
+      "delta_correct_slots": -14,
+      "n_slots": 224,
+      "delta_slots_per_day": -0.5
+    },
+    {
+      "arm": "P1",
+      "scope": "H2",
+      "correct_slots_arm": 158,
+      "correct_slots_P0": 155,
+      "delta_correct_slots": 3,
+      "n_slots": 224,
+      "delta_slots_per_day": 0.10714285714285714
+    },
+    {
+      "arm": "P1",
+      "scope": "H3",
+      "correct_slots_arm": 132,
+      "correct_slots_P0": 138,
+      "delta_correct_slots": -6,
+      "n_slots": 224,
+      "delta_slots_per_day": -0.21428571428571427
+    },
+    {
+      "arm": "P2",
+      "scope": "overall",
+      "correct_slots_arm": 397,
+      "correct_slots_P0": 409,
+      "delta_correct_slots": -12,
+      "n_slots": 672,
+      "delta_slots_per_day": -0.42857142857142855
+    },
+    {
+      "arm": "P2",
+      "scope": "H1",
+      "correct_slots_arm": 131,
+      "correct_slots_P0": 116,
+      "delta_correct_slots": 15,
+      "n_slots": 224,
+      "delta_slots_per_day": 0.5357142857142857
+    },
+    {
+      "arm": "P2",
+      "scope": "H2",
+      "correct_slots_arm": 149,
+      "correct_slots_P0": 155,
+      "delta_correct_slots": -6,
+      "n_slots": 224,
+      "delta_slots_per_day": -0.21428571428571427
+    },
+    {
+      "arm": "P2",
+      "scope": "H3",
+      "correct_slots_arm": 117,
+      "correct_slots_P0": 138,
+      "delta_correct_slots": -21,
+      "n_slots": 224,
+      "delta_slots_per_day": -0.75
+    },
+    {
+      "arm": "P3",
+      "scope": "overall",
+      "correct_slots_arm": 393,
+      "correct_slots_P0": 409,
+      "delta_correct_slots": -16,
+      "n_slots": 672,
+      "delta_slots_per_day": -0.5714285714285714
+    },
+    {
+      "arm": "P3",
+      "scope": "H1",
+      "correct_slots_arm": 145,
+      "correct_slots_P0": 116,
+      "delta_correct_slots": 29,
+      "n_slots": 224,
+      "delta_slots_per_day": 1.0357142857142858
+    },
+    {
+      "arm": "P3",
+      "scope": "H2",
+      "correct_slots_arm": 137,
+      "correct_slots_P0": 155,
+      "delta_correct_slots": -18,
+      "n_slots": 224,
+      "delta_slots_per_day": -0.6428571428571429
+    },
+    {
+      "arm": "P3",
+      "scope": "H3",
+      "correct_slots_arm": 111,
+      "correct_slots_P0": 138,
+      "delta_correct_slots": -27,
+      "n_slots": 224,
+      "delta_slots_per_day": -0.9642857142857143
+    }
+  ]
+}

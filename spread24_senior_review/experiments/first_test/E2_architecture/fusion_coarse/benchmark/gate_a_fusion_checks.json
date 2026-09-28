@@ -1,0 +1,16 @@
+{
+  "F00_fixed_0.0_reproduces_tabular_only_within_1e-9": true,
+  "F00_fixed_0.0_alpha_receives_no_update": true,
+  "F100_fixed_1.0_reproduces_temporal_only_within_1e-9": true,
+  "F100_fixed_1.0_alpha_receives_no_update": true,
+  "F20_alpha_receives_no_update": true,
+  "F40_alpha_receives_no_update": true,
+  "F60_alpha_receives_no_update": true,
+  "F80_alpha_receives_no_update": true,
+  "F00_alpha0_direction_blocked_from_temporal": true,
+  "F00_alpha0_direction_reaches_tabular": true,
+  "F00_alpha_receives_no_direction_gradient": true,
+  "F100_alpha1_direction_blocked_from_tabular": true,
+  "F100_alpha1_direction_reaches_temporal": true,
+  "F100_alpha_receives_no_direction_gradient": true
+}

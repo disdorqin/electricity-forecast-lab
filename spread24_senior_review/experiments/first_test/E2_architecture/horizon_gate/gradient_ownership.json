@@ -1,0 +1,153 @@
+{
+  "G0": {
+    "L_dir": {
+      "strong": {
+        "n_params": 5,
+        "n_with_grad": 5,
+        "norm_l2": 0.31595152616500854
+      },
+      "weak": {
+        "n_params": 4,
+        "n_with_grad": 4,
+        "norm_l2": 0.024831822142004967
+      },
+      "canonical_horizon_gate": {
+        "n_params": 1,
+        "n_with_grad": 1,
+        "norm_l2": 0.006211963016539812
+      },
+      "temporal": {
+        "n_params": 16,
+        "n_with_grad": 16,
+        "norm_l2": 0.7974671721458435
+      }
+    },
+    "L_mag": {
+      "strong": {
+        "n_params": 5,
+        "n_with_grad": 5,
+        "norm_l2": 0.2165929526090622
+      },
+      "weak": {
+        "n_params": 4,
+        "n_with_grad": 4,
+        "norm_l2": 0.022271916270256042
+      },
+      "canonical_horizon_gate": {
+        "n_params": 1,
+        "n_with_grad": 1,
+        "norm_l2": 0.0012208197731524706
+      },
+      "temporal": {
+        "n_params": 16,
+        "n_with_grad": 16,
+        "norm_l2": 0.021491708233952522
+      }
+    },
+    "direction_horizon_gate_mode": "current"
+  },
+  "G1": {
+    "L_dir": {
+      "strong": {
+        "n_params": 5,
+        "n_with_grad": 5,
+        "norm_l2": 0.3157689571380615
+      },
+      "weak": {
+        "n_params": 4,
+        "n_with_grad": 4,
+        "norm_l2": 0.024686170741915703
+      },
+      "canonical_horizon_gate": {
+        "n_params": 1,
+        "n_with_grad": 0,
+        "norm_l2": 0.0
+      },
+      "temporal": {
+        "n_params": 16,
+        "n_with_grad": 16,
+        "norm_l2": 0.7977278828620911
+      }
+    },
+    "L_mag": {
+      "strong": {
+        "n_params": 5,
+        "n_with_grad": 5,
+        "norm_l2": 0.21662980318069458
+      },
+      "weak": {
+        "n_params": 4,
+        "n_with_grad": 4,
+        "norm_l2": 0.022241873666644096
+      },
+      "canonical_horizon_gate": {
+        "n_params": 1,
+        "n_with_grad": 1,
+        "norm_l2": 0.001226521097123623
+      },
+      "temporal": {
+        "n_params": 16,
+        "n_with_grad": 16,
+        "norm_l2": 0.02149544656276703
+      }
+    },
+    "direction_horizon_gate_mode": "fixed_08"
+  },
+  "G2": {
+    "L_dir": {
+      "strong": {
+        "n_params": 5,
+        "n_with_grad": 5,
+        "norm_l2": 0.3163300156593323
+      },
+      "weak": {
+        "n_params": 4,
+        "n_with_grad": 4,
+        "norm_l2": 0.024373194202780724
+      },
+      "canonical_horizon_gate": {
+        "n_params": 1,
+        "n_with_grad": 0,
+        "norm_l2": 0.0
+      },
+      "temporal": {
+        "n_params": 16,
+        "n_with_grad": 16,
+        "norm_l2": 0.7978560328483582
+      },
+      "global_scalar": {
+        "n_params": 1,
+        "n_with_grad": 1,
+        "norm_l2": 0.0018131269607692957
+      }
+    },
+    "L_mag": {
+      "strong": {
+        "n_params": 5,
+        "n_with_grad": 5,
+        "norm_l2": 0.21630068123340607
+      },
+      "weak": {
+        "n_params": 4,
+        "n_with_grad": 4,
+        "norm_l2": 0.0222591832280159
+      },
+      "canonical_horizon_gate": {
+        "n_params": 1,
+        "n_with_grad": 1,
+        "norm_l2": 0.0012240937212482095
+      },
+      "temporal": {
+        "n_params": 16,
+        "n_with_grad": 16,
+        "norm_l2": 0.021498434245586395
+      },
+      "global_scalar": {
+        "n_params": 1,
+        "n_with_grad": 0,
+        "norm_l2": 0.0
+      }
+    },
+    "direction_horizon_gate_mode": "global_learnable"
+  }
+}

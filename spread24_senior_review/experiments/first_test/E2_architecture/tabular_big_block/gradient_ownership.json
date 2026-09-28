@@ -1,0 +1,227 @@
+{
+  "benchmark_day": "2026-02-13",
+  "arms": {
+    "C0": {
+      "direction_tabular_mode": "current",
+      "direction_fusion_alpha": 0.8,
+      "L_dir": {
+        "strong_tabm": {
+          "n_params": 5,
+          "n_with_grad": 5,
+          "norm_l2": 0.31595152616500854,
+          "abs_sum": 47.75424575805664,
+          "live": true
+        },
+        "weak_mlp": {
+          "n_params": 4,
+          "n_with_grad": 4,
+          "norm_l2": 0.024831822142004967,
+          "abs_sum": 1.3505562543869019,
+          "live": true
+        },
+        "horizon_gate": {
+          "n_params": 1,
+          "n_with_grad": 1,
+          "norm_l2": 0.006211963016539812,
+          "abs_sum": 0.025805510580539703,
+          "live": true
+        },
+        "temporal": {
+          "n_params": 16,
+          "n_with_grad": 16,
+          "norm_l2": 0.7974671721458435,
+          "abs_sum": 65.6546859741211,
+          "live": true
+        }
+      },
+      "L_mag": {
+        "strong_tabm": {
+          "n_params": 5,
+          "n_with_grad": 5,
+          "norm_l2": 0.2165929526090622,
+          "abs_sum": 30.287015914916992,
+          "live": true
+        },
+        "weak_mlp": {
+          "n_params": 4,
+          "n_with_grad": 4,
+          "norm_l2": 0.022271916270256042,
+          "abs_sum": 1.5339727401733398,
+          "live": true
+        },
+        "horizon_gate": {
+          "n_params": 1,
+          "n_with_grad": 1,
+          "norm_l2": 0.0012208197731524706,
+          "abs_sum": 0.004832910839468241,
+          "live": true
+        },
+        "temporal": {
+          "n_params": 16,
+          "n_with_grad": 16,
+          "norm_l2": 0.021491708233952522,
+          "abs_sum": 1.638592004776001
+        }
+      },
+      "arm": "C0",
+      "target_day": "2026-02-13",
+      "checkpoint_epoch": 3,
+      "checks": {}
+    },
+    "C1": {
+      "direction_tabular_mode": "strong_only",
+      "direction_fusion_alpha": 0.8,
+      "L_dir": {
+        "strong_tabm": {
+          "n_params": 5,
+          "n_with_grad": 5,
+          "norm_l2": 0.3504297435283661,
+          "abs_sum": 52.37502670288086,
+          "live": true
+        },
+        "weak_mlp": {
+          "n_params": 4,
+          "n_with_grad": 0,
+          "norm_l2": 0.0,
+          "abs_sum": 0.0,
+          "live": false
+        },
+        "horizon_gate": {
+          "n_params": 1,
+          "n_with_grad": 0,
+          "norm_l2": 0.0,
+          "abs_sum": 0.0,
+          "live": false
+        },
+        "temporal": {
+          "n_params": 16,
+          "n_with_grad": 16,
+          "norm_l2": 0.7985774278640747,
+          "abs_sum": 65.5204086303711,
+          "live": true
+        }
+      },
+      "L_mag": {
+        "strong_tabm": {
+          "n_params": 5,
+          "n_with_grad": 5,
+          "norm_l2": 0.20383985340595245,
+          "abs_sum": 27.770915985107422,
+          "live": true
+        },
+        "weak_mlp": {
+          "n_params": 4,
+          "n_with_grad": 4,
+          "norm_l2": 0.018940983340144157,
+          "abs_sum": 1.365552544593811,
+          "live": true
+        },
+        "horizon_gate": {
+          "n_params": 1,
+          "n_with_grad": 1,
+          "norm_l2": 0.0013673108769580722,
+          "abs_sum": 0.004255036823451519,
+          "live": true
+        },
+        "temporal": {
+          "n_params": 16,
+          "n_with_grad": 16,
+          "norm_l2": 0.021464155986905098,
+          "abs_sum": 1.6377995014190674
+        }
+      },
+      "arm": "C1",
+      "target_day": "2026-02-13",
+      "checkpoint_epoch": 3,
+      "checks": {
+        "C1_Ldir_reaches_strong_tabm": true,
+        "C1_Ldir_blocked_from_weak_mlp": true,
+        "C1_Ldir_blocked_from_horizon_gate": true,
+        "C1_C2_temporal_Ldir_live": true
+      }
+    },
+    "C2": {
+      "direction_tabular_mode": "weak_only",
+      "direction_fusion_alpha": 0.8,
+      "L_dir": {
+        "strong_tabm": {
+          "n_params": 5,
+          "n_with_grad": 0,
+          "norm_l2": 0.0,
+          "abs_sum": 0.0,
+          "live": false
+        },
+        "weak_mlp": {
+          "n_params": 4,
+          "n_with_grad": 4,
+          "norm_l2": 0.10099375993013382,
+          "abs_sum": 5.827218532562256,
+          "live": true
+        },
+        "horizon_gate": {
+          "n_params": 1,
+          "n_with_grad": 0,
+          "norm_l2": 0.0,
+          "abs_sum": 0.0,
+          "live": false
+        },
+        "temporal": {
+          "n_params": 16,
+          "n_with_grad": 16,
+          "norm_l2": 0.8554520010948181,
+          "abs_sum": 73.1471939086914,
+          "live": true
+        }
+      },
+      "L_mag": {
+        "strong_tabm": {
+          "n_params": 5,
+          "n_with_grad": 5,
+          "norm_l2": 0.11244425922632217,
+          "abs_sum": 17.43273162841797,
+          "live": true
+        },
+        "weak_mlp": {
+          "n_params": 4,
+          "n_with_grad": 4,
+          "norm_l2": 0.023990605026483536,
+          "abs_sum": 1.7553340196609497,
+          "live": true
+        },
+        "horizon_gate": {
+          "n_params": 1,
+          "n_with_grad": 1,
+          "norm_l2": 0.0005186123889870942,
+          "abs_sum": 0.0019011496333405375,
+          "live": true
+        },
+        "temporal": {
+          "n_params": 16,
+          "n_with_grad": 16,
+          "norm_l2": 0.02339908853173256,
+          "abs_sum": 1.6534208059310913
+        }
+      },
+      "arm": "C2",
+      "target_day": "2026-02-13",
+      "checkpoint_epoch": 3,
+      "checks": {
+        "C2_Ldir_reaches_weak_mlp": true,
+        "C2_Ldir_blocked_from_strong_tabm": true,
+        "C2_Ldir_blocked_from_horizon_gate": true
+      }
+    }
+  },
+  "checks": {
+    "C1_Ldir_reaches_strong_tabm": true,
+    "C1_Ldir_blocked_from_weak_mlp": true,
+    "C1_Ldir_blocked_from_horizon_gate": true,
+    "C2_Ldir_reaches_weak_mlp": true,
+    "C2_Ldir_blocked_from_strong_tabm": true,
+    "C2_Ldir_blocked_from_horizon_gate": true,
+    "C1_C2_temporal_Ldir_live": true,
+    "magnitude_reaches_current_strong_weak_gate_all": true,
+    "fixed_alpha_is_0.8": true
+  },
+  "pass": true
+}

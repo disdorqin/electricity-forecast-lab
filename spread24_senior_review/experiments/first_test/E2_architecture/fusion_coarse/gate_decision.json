@@ -1,0 +1,12 @@
+{
+  "fusion_region": "NO_CLEAR_REGION",
+  "notes": [
+    "admissible arms (3): F20, F80, FL08",
+    "best admissible by Raw = F80 (Raw=0.589286, Balanced=0.537248)",
+    "best=F80 region=TEMPORAL_HEAVY; separated from other-region admissible arms: False; paired Raw vs FL08 established positive: False",
+    "no admissible arm is separated from its rivals and no paired evidence establishes the leader -> NO_CLEAR_REGION"
+  ],
+  "chance": 0.5,
+  "material": 0.02,
+  "anchor": "FL08"
+}

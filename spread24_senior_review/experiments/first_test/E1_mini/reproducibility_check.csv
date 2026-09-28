@@ -1,0 +1,5 @@
+target_day,config,e0_run,e1_run,status,max_abs_metric_delta,best_epoch_e0,best_epoch_e1,best_epoch_match,wall_e0,wall_e1,delta_raw_direction_accuracy,delta_balanced_accuracy,delta_positive_recall,delta_nonpositive_recall,delta_auc,delta_brier,delta_magnitude_mae,delta_magnitude_skill,delta_predicted_positive_fraction
+2026-02-15,joint_v21/direction_first/vanilla,E0-D1,E1-M1-2026-02-15,EXACT,0.0,2,2,True,11.403657300019404,15.72485980001511,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2026-04-15,joint_v21/direction_first/vanilla,E0-D2,E1-M1-2026-04-15,EXACT,0.0,1,1,True,12.346242600004189,17.107937399996445,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2026-06-15,joint_v21/direction_first/vanilla,E0-D3,E1-M1-2026-06-15,EXACT,0.0,4,4,True,13.99004779997631,21.472401400009403,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2026-08-10,joint_v21/direction_first/vanilla,E0-D4,E1-M1-2026-08-10,EXACT,0.0,3,3,True,12.772393599996576,18.37251670000842,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

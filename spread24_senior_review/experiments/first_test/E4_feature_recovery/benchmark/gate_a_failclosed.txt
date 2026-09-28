@@ -1,0 +1,5 @@
+E4-B fail-closed CLI/contract combinations verified to raise ValueError:
+- feature_recovery_profile=literature240 with shared readout
+- feature_recovery_profile=literature240 with direction_postprocess_mode=regime_logit
+- feature_recovery_profile=literature240 with direction_class_weight_mode=sqrt_balanced
+- feature_recovery_profile=literature240 with objective_mode=joint_v21

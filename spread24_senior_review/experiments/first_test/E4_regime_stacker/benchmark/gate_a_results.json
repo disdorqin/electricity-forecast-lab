@@ -1,0 +1,39 @@
+{
+  "benchmark_day": "2026-02-13",
+  "checks": {
+    "1_default_q2_reproduces_saved_q2": true,
+    "9_same_checkpoint_P1_P2_P3": true,
+    "10_intrain_postprocess_matches_offline_derivation": true,
+    "2_base_equals_canonical": true,
+    "3_full_monitor_equals_canonical": true,
+    "4_calibrator_newest90": true,
+    "5_checkpoint_monitor_is_rest": true,
+    "6_no_overlap_adjacent": true,
+    "7_calibrator_ends_Dminus2": true,
+    "8_fit_equals_base": true,
+    "11_P2_exactly_5_features": true,
+    "12_P3_exactly_14_features": true,
+    "13_regime_features_selected": true,
+    "14_no_target_truth_in_fit": true,
+    "15_threshold_half": true,
+    "16_frozen_hashes": true,
+    "17_q2_route_and_k8_preserved": true,
+    "finite": true
+  },
+  "default_q2_reproduction_max_abs_delta": 0.0,
+  "intrain_cross_check": {
+    "weights_match": true,
+    "post_predictions_match": true,
+    "base_predictions_match": true
+  },
+  "benchmark_arms": [
+    "P0",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "P2_feature_count": 5,
+  "P3_feature_count": 14,
+  "missing_regime_features": [],
+  "all_gate_a_pre_tests_pass": true
+}

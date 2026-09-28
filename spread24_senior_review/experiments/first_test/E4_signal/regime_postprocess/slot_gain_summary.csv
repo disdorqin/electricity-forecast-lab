@@ -1,0 +1,9 @@
+arm,segment,slot_gain_vs_P0
+P1,ALL,-4
+P1,H1,2
+P1,H2,-4
+P1,H3,-2
+P2,ALL,-4
+P2,H1,3
+P2,H2,-14
+P2,H3,7

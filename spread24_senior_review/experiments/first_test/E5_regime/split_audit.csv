@@ -1,0 +1,5 @@
+window,eval_start,eval_end,fit_cutoff_D_minus_2,train_days,train_start,train_end,eval_days,max_train_date_le_cutoff,eval_in_training_indices
+W1,2026-02-12,2026-02-18,2026-02-10,1494,2022-01-09,2026-02-10,7,True,False
+W2,2026-04-12,2026-04-18,2026-04-10,1553,2022-01-09,2026-04-10,7,True,False
+W3,2026-06-12,2026-06-18,2026-06-10,1614,2022-01-09,2026-06-10,7,True,False
+W4,2026-08-07,2026-08-13,2026-08-05,1670,2022-01-09,2026-08-05,7,True,False

@@ -1,0 +1,33 @@
+--- --direction-readout-mode segment_heads ---
+ValueError: non-shared direction_readout_mode requires dir_only/full_current/current routes, all roles, canonical encoding, fixed alpha=.8 and train_mode=stage_a
+exit=2
+--- --direction-readout-mode segment_bias --objective-mode dir_only --direction-fusion-alpha 0.5 ---
+ValueError: non-shared direction_readout_mode requires dir_only/full_current/current routes, all roles, canonical encoding, fixed alpha=.8 and train_mode=stage_a
+exit=2
+--- --direction-readout-mode segment_heads --objective-mode dir_only --direction-fusion-alpha 0.8 --numeric-encoding-mode raw_only ---
+ValueError: non-shared direction_readout_mode requires dir_only/full_current/current routes, all roles, canonical encoding, fixed alpha=.8 and train_mode=stage_a
+exit=2
+--- --direction-readout-mode segment_heads --objective-mode dir_only --direction-fusion-alpha 0.8 --strong-role-profile drop_mag ---
+ValueError: non-shared direction_readout_mode requires dir_only/full_current/current routes, all roles, canonical encoding, fixed alpha=.8 and train_mode=stage_a
+exit=2
+--- --direction-readout-mode bad_mode --objective-mode dir_only --direction-fusion-alpha 0.8 ---
+usage: run_tabm_v21.py direction-experiment [-h] [--config CONFIG]
+                                            --target-day TARGET_DAY
+                                            [--profile {smoke,default}]
+                                            [--mode {A0,A1,A2}]
+                                            [--objective-mode {joint_v21,dir_only,mag_only}]
+                                            [--checkpoint-policy {v21_guardrail,direction_first,magnitude_first}]
+                                            [--gradient-policy {vanilla,direction_protected}]
+                                            [--architecture-mode {full_current,tabular_only,temporal_only}]
+                                            [--direction-tabular-mode {current,strong_only,weak_only}]
+                                            [--direction-horizon-gate-mode {current,fixed_08,global_learnable}]
+                                            [--strong-role-profile {all,drop_mag,drop_dir}]
+                                            [--numeric-encoding-mode {canonical,raw_only,ple_only}]
+                                            [--direction-readout-mode {shared,segment_bias,segment_heads}]
+                                            [--direction-fusion-alpha DIRECTION_FUSION_ALPHA]
+                                            [--direction-bce-min-delta DIRECTION_BCE_MIN_DELTA]
+                                            [--magnitude-l1-min-delta MAGNITUDE_L1_MIN_DELTA]
+                                            [--gradient-diagnostics]
+                                            [--gradient-batches-per-epoch GRADIENT_BATCHES_PER_EPOCH]
+run_tabm_v21.py direction-experiment: error: argument --direction-readout-mode: invalid choice: 'bad_mode' (choose from 'shared', 'segment_bias', 'segment_heads')
+exit=2

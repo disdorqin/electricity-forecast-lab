@@ -1,0 +1,18 @@
+spread_sign: DA-RT
+forecast_origin: "D-1 14:00"
+training_days: 180
+eval_start: "2026-01-01"
+eval_end: "2026-08-14"
+seed: 20260828
+periods: ["1_8", "9_16", "17_24"]
+model:
+  objective: regression_l1
+  n_estimators: 220
+  learning_rate: 0.03
+  num_leaves: 31
+  min_child_samples: 20
+  subsample: 0.9
+  colsample_bytree: 0.9
+  reg_lambda: 1.0
+
+

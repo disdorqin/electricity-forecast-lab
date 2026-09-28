@@ -1,0 +1,14 @@
+{
+  "baseline_94": 94,
+  "full_suite": 198,
+  "focused_e4_a": 11,
+  "focused_e4_b": 5,
+  "previous_e2_e3": 88,
+  "command_full": "epf-2\\python.exe -m pytest -q -p no:cacheprovider \"src/TafM_改进源码/tests\" tests/test_data_contract.py tests/test_leakage.py --ignore=tests/test_smoke.py",
+  "command_baseline": "same, plus --ignore for the E2-A/B1/C1/D1/E1, E3-A, E4-A and E4-B focused files",
+  "fail_closed_exit_code": 2,
+  "focused_files": [
+    "src/TafM_改进源码/tests/test_e4_a_three_way_split.py",
+    "src/TafM_改进源码/tests/test_e4_a_direction_postprocess.py"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "raw": 0.5803571428571429,
+  "balanced": 0.5,
+  "positive_recall": 0.0,
+  "negative_recall": 1.0,
+  "ppf": 0.25297619047619047,
+  "windows": {
+    "W1": 0.6964285714285714,
+    "W2": 0.40476190476190477,
+    "W3": 0.6130952380952381,
+    "W4": 0.6071428571428571
+  },
+  "hours": {
+    "H1": {
+      "raw": 0.5089285714285714,
+      "balanced": 0.5,
+      "positive_recall": 0.0,
+      "negative_recall": 1.0
+    },
+    "H2": {
+      "raw": 0.6741071428571429,
+      "balanced": 0.5,
+      "positive_recall": 0.0,
+      "negative_recall": 1.0
+    },
+    "H3": {
+      "raw": 0.5580357142857143,
+      "balanced": 0.5,
+      "positive_recall": 0.0,
+      "negative_recall": 1.0
+    }
+  }
+}

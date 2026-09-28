@@ -1,0 +1,18 @@
+--- --objective-mode dir_only --direction-readout-mode segment_heads --direction-fusion-alpha 0.8 --direction-postprocess-mode segment_logit ---
+ValueError: Direction postprocessing requires the E4-A three-way split so the stacker never refits the checkpoint-selection monitor
+exit=2
+--- --objective-mode dir_only --direction-readout-mode shared --direction-fusion-alpha 0.8 --e4-three-way-split ---
+ValueError: E4-A three-way split requires the canonical-split Q2 dir_only route: dir_only/stage_a/segment_heads/all roles/canonical encoding/fixed alpha=.8
+exit=2
+--- --objective-mode dir_only --direction-readout-mode segment_heads --direction-fusion-alpha 0.8 --e4-three-way-split --stage-a-monitor-days 60 ---
+ValueError: E4-A three-way split requires the canonical-split Q2 dir_only route: dir_only/stage_a/segment_heads/all roles/canonical encoding/fixed alpha=.8
+exit=2
+--- --objective-mode dir_only --direction-readout-mode segment_heads --direction-fusion-alpha 0.8 --e4-three-way-split --direction-class-weight-mode full_balanced ---
+ValueError: E4-A three-way split requires the canonical-split Q2 dir_only route: dir_only/stage_a/segment_heads/all roles/canonical encoding/fixed alpha=.8
+exit=2
+--- --objective-mode joint_v21 --direction-readout-mode segment_heads --direction-fusion-alpha 0.8 --e4-three-way-split ---
+ValueError: non-shared direction_readout_mode requires dir_only/full_current/current routes, all roles, canonical encoding, fixed alpha=.8 and train_mode=stage_a
+exit=2
+--- --objective-mode dir_only --direction-readout-mode segment_heads --direction-fusion-alpha 0.5 --e4-three-way-split ---
+ValueError: non-shared direction_readout_mode requires dir_only/full_current/current routes, all roles, canonical encoding, fixed alpha=.8 and train_mode=stage_a
+exit=2

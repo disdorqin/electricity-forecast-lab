@@ -1,0 +1,20 @@
+seed: 20260924
+selector_cutoff: 2025-12-31
+selector_q: 0.90
+strong_hit_rate: 0.75
+weak_hit_rate: 0.50
+arch_type: tabm-mini
+k: 8
+d_tab: 128
+n_blocks: 2
+dropout: 0.05
+d_time: 32
+time_hidden: 64
+fft_bins: [1, 7, 14, 21, 28]
+mode: A2
+alpha_init: 0.8
+max_epochs: 120
+patience: 15
+stage_b_epochs: 8
+stage_b_recent_quota: 0.80
+stage_b_lr_ratio: 0.10

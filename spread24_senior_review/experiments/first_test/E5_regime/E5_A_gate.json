@@ -1,0 +1,89 @@
+{
+  "gate": "NO_CLEAR_REGIME_SIGNAL",
+  "primary_method": "KMeans_K5",
+  "windows": {
+    "W1": [
+      "2026-02-12",
+      "2026-02-18"
+    ],
+    "W2": [
+      "2026-04-12",
+      "2026-04-18"
+    ],
+    "W3": [
+      "2026-06-12",
+      "2026-06-18"
+    ],
+    "W4": [
+      "2026-08-07",
+      "2026-08-13"
+    ]
+  },
+  "hdbscan_available": false,
+  "hdbscan_status": "OMITTED_NOT_INSTALLED",
+  "methods": [
+    [
+      "KMeans",
+      3
+    ],
+    [
+      "KMeans",
+      5
+    ],
+    [
+      "KMeans",
+      7
+    ],
+    [
+      "GMM",
+      3
+    ],
+    [
+      "GMM",
+      5
+    ]
+  ],
+  "seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "feature_names": [
+    "residual_load_renew",
+    "renewable_share",
+    "bidding_space_ratio",
+    "net_ramp_pressure",
+    "err_net_load_28d_std",
+    "uncert_风电总加_width",
+    "uncert_光伏总加_width",
+    "ctx_spread_positive_rate14",
+    "spread_same_slot_28d_positive_rate"
+  ],
+  "feature_matrix": "per-target-day mean of 24 origin-available X_future values",
+  "selector_sha256": "ed348cfd9fd911bc675d7fd920485b1a748c159a3e0a395b3af02af01015092f",
+  "source_sha256": "a1b86f956d9fb18a483d473cbc0334e1078097f6ef75274b2804488968a349ea",
+  "sequence_manifest_sha256": "9144bbed33369a4bed5a8acc508a71f50836e55667e3cc4e768badfd35ce7a82",
+  "python": "3.11.9",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scikit_learn": "1.5.2",
+  "git_commit": null,
+  "pooled_primary_paired_day_bootstrap": {
+    "delta_raw": 0.022321428571428558,
+    "ci95_low": -0.02529761904761905,
+    "ci95_high": 0.06845238095238093,
+    "n_days": 28,
+    "better_days": 13,
+    "tie_days": 7,
+    "worse_days": 8
+  },
+  "primary_windows_with_positive_rate_range_ge_10pp": 1,
+  "primary_windows_cluster_baseline_better": 3,
+  "primary_stable_structure_all_folds": false,
+  "regime_pass": false,
+  "limitations": [
+    "screening panel only; not full Jan-Aug DEV",
+    "not a V2.2 model test",
+    "no E5-B/E5-C authorization"
+  ]
+}

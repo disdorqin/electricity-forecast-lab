@@ -1,0 +1,12 @@
+[
+  {
+    "check": "R0_current_fixed_08",
+    "max_abs_delta": 0.0,
+    "within_1e-9": true
+  },
+  {
+    "check": "R0_default_no_flag",
+    "max_abs_delta": 0.0,
+    "within_1e-9": true
+  }
+]

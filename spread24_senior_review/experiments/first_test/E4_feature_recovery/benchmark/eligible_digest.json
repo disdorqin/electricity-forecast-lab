@@ -1,0 +1,14 @@
+{
+  "day": "2026-02-13",
+  "eligible_index_digest": {
+    "F0": "b2c48bdbab9e464c",
+    "F1": "b2c48bdbab9e464c",
+    "F2": "b2c48bdbab9e464c"
+  },
+  "identical_across_profiles": true,
+  "counts": {
+    "F0": 1495,
+    "F1": 1495,
+    "F2": 1495
+  }
+}

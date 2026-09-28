@@ -1,0 +1,83 @@
+{
+  "status": "COMPLETE",
+  "q2_reproduction_max_abs_delta": 0.0,
+  "overall": [
+    {
+      "raw_direction_accuracy": 0.6086309523809523,
+      "balanced_accuracy": 0.5424274457044014,
+      "positive_recall": 0.30578512396694213,
+      "nonpositive_recall": 0.7790697674418605,
+      "auc": 0.5911493369210071,
+      "brier": 0.2296564248688035,
+      "arm": "P0",
+      "slots": 672,
+      "ppf": 0.25148809523809523,
+      "one_class_days": 2,
+      "positive_recall_zero_days": 8,
+      "nonpositive_recall_zero_days": 0
+    },
+    {
+      "raw_direction_accuracy": 0.6026785714285714,
+      "balanced_accuracy": 0.5124831827791658,
+      "positive_recall": 0.19008264462809918,
+      "nonpositive_recall": 0.8348837209302326,
+      "auc": 0.5600230636171439,
+      "brier": 0.23308421093044324,
+      "arm": "P1",
+      "slots": 672,
+      "ppf": 0.17410714285714285,
+      "one_class_days": 5,
+      "positive_recall_zero_days": 13,
+      "nonpositive_recall_zero_days": 0
+    },
+    {
+      "raw_direction_accuracy": 0.6026785714285714,
+      "balanced_accuracy": 0.5197097828176053,
+      "positive_recall": 0.2231404958677686,
+      "nonpositive_recall": 0.8162790697674419,
+      "auc": 0.5416202191043629,
+      "brier": 0.23711457263385483,
+      "arm": "P2",
+      "slots": 672,
+      "ppf": 0.19791666666666666,
+      "one_class_days": 6,
+      "positive_recall_zero_days": 14,
+      "nonpositive_recall_zero_days": 0
+    }
+  ],
+  "paired": [
+    {
+      "comparison": "P1_minus_P0",
+      "delta_raw": -0.005952380952380943,
+      "ci_low": -0.03869047619047618,
+      "ci_high": 0.025297619047619072,
+      "wins": 10,
+      "ties": 7,
+      "losses": 11
+    },
+    {
+      "comparison": "P2_minus_P0",
+      "delta_raw": -0.005952380952380943,
+      "ci_low": -0.05654761904761903,
+      "ci_high": 0.04464285714285716,
+      "wins": 9,
+      "ties": 6,
+      "losses": 13
+    },
+    {
+      "comparison": "P2_minus_P1",
+      "delta_raw": -1.982541115402065e-18,
+      "ci_low": -0.04315476190476191,
+      "ci_high": 0.04315476190476191,
+      "wins": 10,
+      "ties": 7,
+      "losses": 11
+    }
+  ],
+  "safety": {
+    "P0": true,
+    "P1": false,
+    "P2": false
+  },
+  "POSTPROCESS_SIGNAL": "POSTPROCESS_HARMFUL"
+}

@@ -1,0 +1,4 @@
+D:\computer_download\environment\conda\epf-2\Lib\site-packages\rtdl_num_embeddings.py:340: UserWarning: The 218-th feature has just two bin edges, which means only one bin. Strictly speaking, using a single bin for the piecewise-linear encoding should not break anything, but it is the same as using sklearn.preprocessing.MinMaxScaler
+  warnings.warn(
+D:\computer_download\environment\conda\epf-2\Lib\site-packages\rtdl_num_embeddings.py:340: UserWarning: The 218-th feature has just two bin edges, which means only one bin. Strictly speaking, using a single bin for the piecewise-linear encoding should not break anything, but it is the same as using sklearn.preprocessing.MinMaxScaler
+  warnings.warn(

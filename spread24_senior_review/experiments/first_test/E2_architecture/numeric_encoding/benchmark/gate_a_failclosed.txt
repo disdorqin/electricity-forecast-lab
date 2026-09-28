@@ -1,0 +1,15 @@
+--- --numeric-encoding-mode raw_only ---
+ValueError: non-canonical numeric_encoding_mode requires dir_only/full_current/current routes, strong_role_profile=all, fixed alpha=.8 and train_mode=stage_a
+exit=2
+--- --numeric-encoding-mode raw_only --objective-mode dir_only --direction-fusion-alpha 0.5 ---
+ValueError: non-canonical numeric_encoding_mode requires dir_only/full_current/current routes, strong_role_profile=all, fixed alpha=.8 and train_mode=stage_a
+exit=2
+--- --numeric-encoding-mode ple_only --objective-mode dir_only --direction-fusion-alpha 0.8 --strong-role-profile drop_mag ---
+ValueError: non-canonical numeric_encoding_mode requires dir_only/full_current/current routes, strong_role_profile=all, fixed alpha=.8 and train_mode=stage_a
+exit=2
+--- --numeric-encoding-mode ple_only --objective-mode dir_only --direction-fusion-alpha 0.8 --train-mode stage_ab ---
+usage: run_tabm_v21.py [-h]
+                       {gate,selector,transition-report,train,eval,ablate-core,train-strategy,direction-benchmark,direction-experiment}
+                       ...
+run_tabm_v21.py: error: unrecognized arguments: --train-mode stage_ab
+exit=2

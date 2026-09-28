@@ -1,0 +1,19 @@
+{
+  "target_days": 28,
+  "slots": 5376,
+  "models": [
+    "B0_AlwaysNonPositive",
+    "B1_HourMajority180",
+    "B2_XGB_DIR_180",
+    "B3_XGB_DIR_EXPANDING",
+    "B4_StrictLightGBM_DIR_180",
+    "T0",
+    "T1",
+    "T2"
+  ],
+  "selector_sha256": "ed348cfd9fd911bc675d7fd920485b1a748c159a3e0a395b3af02af01015092f",
+  "truth_cross_check_max_abs_delta": 2.929687502728484e-05,
+  "b1_window_days": 181,
+  "b2_window_days": 180,
+  "seed": 20260924
+}

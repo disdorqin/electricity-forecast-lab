@@ -1,0 +1,24 @@
+{
+  "R0": {
+    "role_profile": "all",
+    "strong_count": 211,
+    "weak_count": 11,
+    "temporal_live": true,
+    "horizon_gate_live": true
+  },
+  "R1": {
+    "role_profile": "drop_mag",
+    "strong_count": 189,
+    "weak_count": 11,
+    "temporal_live": true,
+    "horizon_gate_live": true
+  },
+  "R2": {
+    "role_profile": "drop_dir",
+    "strong_count": 179,
+    "weak_count": 11,
+    "temporal_live": true,
+    "horizon_gate_live": true
+  },
+  "checks": "benchmark CUDA+AMP autograd and finite k=8 routing required; see run manifests"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "arm": "F0",
+    "feature_recovery_profile": "selected222",
+    "selected_feature_count": 222,
+    "strong_count": 211,
+    "weak_count": 11,
+    "recovered_count": 0,
+    "recovered_role": null,
+    "base_selector_sha256": "ed348cfd9fd911bc675d7fd920485b1a748c159a3e0a395b3af02af01015092f",
+    "experiment_feature_profile_sha256": null
+  },
+  {
+    "arm": "F1",
+    "feature_recovery_profile": "literature240",
+    "selected_feature_count": 240,
+    "strong_count": 211,
+    "weak_count": 29,
+    "recovered_count": 18,
+    "recovered_role": "Weak",
+    "base_selector_sha256": "ed348cfd9fd911bc675d7fd920485b1a748c159a3e0a395b3af02af01015092f",
+    "experiment_feature_profile_sha256": "1dc70d3a7b9c1c98136e6cc5b4303542d1594a2226c2ce92f92657332a972385"
+  },
+  {
+    "arm": "F2",
+    "feature_recovery_profile": "all259",
+    "selected_feature_count": 259,
+    "strong_count": 211,
+    "weak_count": 48,
+    "recovered_count": 37,
+    "recovered_role": "Weak",
+    "base_selector_sha256": "ed348cfd9fd911bc675d7fd920485b1a748c159a3e0a395b3af02af01015092f",
+    "experiment_feature_profile_sha256": "32e9f2dd4800e3c2e199f9c03f20133d10f73f2f61a1f2526db3b96ad0f6576e"
+  }
+]

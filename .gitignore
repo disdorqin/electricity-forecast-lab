@@ -1,0 +1,7 @@
+# Lab-local transient files
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+.venv/
+.env
+*.log

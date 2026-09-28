@@ -1,0 +1,243 @@
+{
+  "day": "2026-02-13",
+  "checks": {
+    "1_shared_reproduces_f80": true,
+    "2_default_no_flag_exact": true,
+    "3_q1_three_biases": true,
+    "4_q1_one_shared_head": true,
+    "5_q2_three_heads": true,
+    "6_q2_no_shared_direction_head_and_exclusive": true,
+    "7_k8_and_bk24": true,
+    "8_threshold_unchanged": true,
+    "9_magnitude_unchanged": true,
+    "10_frozen_hashes": true
+  },
+  "arms": {
+    "Q0": {
+      "status": "PASS",
+      "direction_readout_mode": "shared",
+      "direction_readout_audit": {
+        "mode": "shared",
+        "segment_hour_map": {
+          "H1": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "H2": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "H3": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        "shared_direction_head": true,
+        "n_segment_bias": 0,
+        "n_segment_heads": 0,
+        "segment_bias": null,
+        "segment_head_param_norms": null,
+        "segment_head_param_counts": null
+      },
+      "parameter_count": 382724,
+      "parameter_count_trainable": 382724,
+      "device": "cuda",
+      "amp": true,
+      "config_k": 8,
+      "numerical_stability_status": "PASS"
+    },
+    "Q0D": {
+      "status": "PASS",
+      "direction_readout_mode": "shared",
+      "direction_readout_audit": {
+        "mode": "shared",
+        "segment_hour_map": {
+          "H1": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "H2": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "H3": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        "shared_direction_head": true,
+        "n_segment_bias": 0,
+        "n_segment_heads": 0,
+        "segment_bias": null,
+        "segment_head_param_norms": null,
+        "segment_head_param_counts": null
+      },
+      "parameter_count": 382724,
+      "parameter_count_trainable": 382724,
+      "device": "cuda",
+      "amp": true,
+      "config_k": 8,
+      "numerical_stability_status": "PASS"
+    },
+    "Q1": {
+      "status": "PASS",
+      "direction_readout_mode": "segment_bias",
+      "direction_readout_audit": {
+        "mode": "segment_bias",
+        "segment_hour_map": {
+          "H1": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "H2": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "H3": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        "shared_direction_head": true,
+        "n_segment_bias": 3,
+        "n_segment_heads": 0,
+        "segment_bias": [
+          0.012620387598872185,
+          0.01465731393545866,
+          -0.019026504829525948
+        ],
+        "segment_head_param_norms": null,
+        "segment_head_param_counts": null
+      },
+      "parameter_count": 382727,
+      "parameter_count_trainable": 382727,
+      "device": "cuda",
+      "amp": true,
+      "config_k": 8,
+      "numerical_stability_status": "PASS"
+    },
+    "Q2": {
+      "status": "PASS",
+      "direction_readout_mode": "segment_heads",
+      "direction_readout_audit": {
+        "mode": "segment_heads",
+        "segment_hour_map": {
+          "H1": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "H2": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "H3": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        "shared_direction_head": false,
+        "n_segment_bias": 0,
+        "n_segment_heads": 3,
+        "segment_bias": null,
+        "segment_head_param_norms": [
+          1.745162844657898,
+          1.596691608428955,
+          1.6795510053634644
+        ],
+        "segment_head_param_counts": [
+          264,
+          264,
+          264
+        ]
+      },
+      "parameter_count": 383252,
+      "parameter_count_trainable": 383252,
+      "device": "cuda",
+      "amp": true,
+      "config_k": 8,
+      "numerical_stability_status": "PASS"
+    }
+  },
+  "delta_q0_vs_f80": 0.0,
+  "delta_q0d_vs_f80": 0.0,
+  "parameter_counts": {
+    "Q0": 382724,
+    "Q0D": 382724,
+    "Q1": 382727,
+    "Q2": 383252
+  },
+  "head_params": 264,
+  "all_gate_a_pre_tests_pass": true
+}
