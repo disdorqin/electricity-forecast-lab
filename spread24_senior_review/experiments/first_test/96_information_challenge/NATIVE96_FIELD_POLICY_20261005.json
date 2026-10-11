@@ -1,0 +1,95 @@
+{
+  "status": "NATIVE96_FIELD_POLICY_DISCUSSION_FROZEN_V1",
+  "date": "2026-10-05",
+  "remote_audit_range": ["2022-01-01", "2026-09-30"],
+  "forecast_origin": "D-1 14:00 Asia/Shanghai",
+  "target": "spread = RT - DA",
+  "resolution": "15min",
+  "periods_per_day": 96,
+  "production_project_write_policy": "STRICTLY_READ_ONLY",
+  "research_snapshot_policy": "remote SELECT-only -> spread24_senior_review immutable CSV+Parquet",
+  "research_visibility_v1": {
+    "target_day_forecasts": "allow if published/available as 96-point forecast inputs",
+    "target_day_actuals": "forbidden as features",
+    "target_day_dayahead_price": "forbidden as feature in direct-spread V1",
+    "target_day_realtime_price": "label only",
+    "decision_day_grid_actual_p1_p56": "allow as experimental fixed-boundary visible context",
+    "decision_day_grid_p57_p96": "replace by same-field forecast, never by future actual",
+    "decision_day_dayahead_price": "may be used as historical context if explicitly registered",
+    "decision_day_realtime_price": "excluded in V1 for conservative simplicity",
+    "full_price_history": "use D-2 and earlier only",
+    "temporary_actual_history": "not a strict V1 feature unless historical publication-time provenance is separately proven",
+    "db_audit_timestamps": "never model features"
+  },
+  "main_table_remote_trend": {
+    "全网负荷预测": {"full96_days": 1357, "first_any": "2023-01-01", "last_any": "2026-09-30", "recent_full96_run_days": 1143, "policy": "KEEP_RECENT_STABLE"},
+    "核电预测": {"full96_days": 1644, "first_any": "2022-01-01", "last_any": "2026-09-30", "recent_full96_run_days": 16, "last365_full96_days": 364, "policy": "KEEP_WITH_AVAILABILITY_MASK"},
+    "正备用预测": {"full96_days": 1681, "last_any": "2026-08-16", "recent_full96_run_days": 0, "policy": "DROP_FROM_DEPLOYMENT_CORE"},
+    "负备用预测": {"full96_days": 1681, "last_any": "2026-08-16", "recent_full96_run_days": 0, "policy": "DROP_FROM_DEPLOYMENT_CORE"},
+    "直调负荷临时实际": {"full96_days": 1265, "first_any": "2023-04-10", "last_any": "2026-09-30", "recent_full96_run_days": 1255, "policy": "HOLD_FOR_HISTORICAL_VINTAGE_PROVENANCE"},
+    "地方电厂出力临时实际": {"full96_days": 1265, "first_any": "2023-04-10", "last_any": "2026-09-30", "recent_full96_run_days": 1255, "policy": "HOLD_FOR_HISTORICAL_VINTAGE_PROVENANCE"},
+    "外电临时实际": {"full96_days": 1265, "first_any": "2023-04-10", "last_any": "2026-09-30", "recent_full96_run_days": 1255, "policy": "HOLD_FOR_HISTORICAL_VINTAGE_PROVENANCE"},
+    "风电临时实际": {"full96_days": 1265, "first_any": "2023-04-10", "last_any": "2026-09-30", "recent_full96_run_days": 1255, "policy": "HOLD_FOR_HISTORICAL_VINTAGE_PROVENANCE"},
+    "光伏临时实际": {"full96_days": 1265, "first_any": "2023-04-10", "last_any": "2026-09-30", "recent_full96_run_days": 1255, "policy": "HOLD_FOR_HISTORICAL_VINTAGE_PROVENANCE"},
+    "核电临时实际": {"full96_days": 1151, "first_any": "2023-04-10", "last_any": "2026-09-30", "recent_full96_run_days": 572, "policy": "HOLD_FOR_HISTORICAL_VINTAGE_PROVENANCE"},
+    "抽蓄临时实际": {"full96_days": 1257, "first_any": "2023-04-10", "last_any": "2026-09-30", "recent_full96_run_days": 1074, "policy": "HOLD_FOR_HISTORICAL_VINTAGE_PROVENANCE"},
+    "全网负荷临时实际": {"full96_days": 1265, "first_any": "2023-04-10", "last_any": "2026-09-30", "recent_full96_run_days": 1255, "policy": "HOLD_FOR_HISTORICAL_VINTAGE_PROVENANCE"},
+    "边界全网负荷预测": {"full96_days": 1273, "first_any": "2023-04-01", "last_any": "2026-09-30", "recent_full96_run_days": 734, "policy": "KEEP_OPTIONAL_NATIVE96"},
+    "边界直调负荷预测": {"full96_days": 1274, "first_any": "2023-04-01", "last_any": "2026-09-30", "recent_full96_run_days": 734, "policy": "KEEP_OPTIONAL_NATIVE96"},
+    "边界外电预测": {"full96_days": 1273, "first_any": "2023-04-01", "last_any": "2026-09-30", "recent_full96_run_days": 734, "policy": "KEEP_OPTIONAL_NATIVE96"},
+    "边界风电预测": {"full96_days": 1267, "first_any": "2023-04-01", "last_any": "2026-09-30", "recent_full96_run_days": 734, "policy": "KEEP_OPTIONAL_NATIVE96"},
+    "边界光伏预测": {"full96_days": 1267, "first_any": "2023-04-01", "last_any": "2026-09-30", "recent_full96_run_days": 734, "policy": "KEEP_OPTIONAL_NATIVE96"},
+    "边界核电预测": {"full96_days": 0, "policy": "DROP"},
+    "日前一次出清价格": {"full96_days": 1461, "last90_full96_days": 0, "recent_any_run_days": 8, "policy": "DROP_FROM_CORE_RECENTLY_SPARSE"}
+  },
+  "aux_remote_trend": {
+    "dcst_forecast_load": {"good_days": 1649, "median_rows_per_good_day": 96, "last365_good_days": 364, "policy": "KEEP_AS_OPTIONAL_FORECAST_CONTEXT"},
+    "dcst_forecast_tieline": {"good_days": 1649, "median_rows_per_good_day": 96, "recent_run_days": 82, "last365_good_days": 364, "policy": "KEEP_PRIMITIVE_CHANNELS_ONLY_AS_STATE_CONTEXT"},
+    "dcst_forecast_unit_overhaul": {"good_days": 1120, "first": "2023-04-11", "recent_run_days": 217, "last365_good_days": 324, "policy": "KEEP_OPTIONAL_DAILY_STATE_AFTER_SEMANTICS"},
+    "dcst_tmp_spare": {"good_days": 1181, "median_rows_per_good_day": 96, "last365_good_days": 363, "policy": "HOLD_TEMPORARY_SEMANTICS_AND_PROVENANCE"},
+    "dcst_tmp_block": {"good_days": 1178, "median_rows_per_good_day": 96, "last365_good_days": 363, "policy": "HOLD_TEMPORARY_SEMANTICS_AND_PROVENANCE"},
+    "dcst_tmp_open_stop": {"good_days": 1649, "median_rows_per_good_day": 1, "recent_run_days": 685, "policy": "HOLD_UNRESOLVED_FIELD_MEANING"},
+    "dcst_tmp_unit_overhaul": {"good_days": 1649, "median_rows_per_good_day": 1, "recent_run_days": 685, "policy": "HOLD_NO_DIRECT_POWER_SEMANTICS"},
+    "unit_info": {"good_days": 1648, "median_rows_per_good_day": 1, "recent_run_days": 548, "policy": "KEEP_METADATA_FOR_CAPACITY_WEIGHTING_ONLY_WITH_TIMING_PROOF"},
+    "net_contract_day": {"good_days": 10, "first": "2026-09-11", "last": "2026-09-24", "policy": "DROP_TOO_SHORT"},
+    "dcst_tmp_trans_overhaul": {"policy": "DROP_EMPTY_VALID_ONLY"}
+  },
+  "feature_policy": {
+    "core": [
+      "target-day primitive forecast profiles",
+      "derived renewable and bidding-space/residual-load profiles",
+      "same-quarter historical spread features",
+      "D-1 p1-p56 routed operating prefix",
+      "15/30/60-minute ramps and curvature",
+      "forecast-error reliability features",
+      "whole-96 profile statistics and position features"
+    ],
+    "optional_with_mask": [
+      "nuclear forecast",
+      "full-system load forecast",
+      "non-nuclear boundary forecasts",
+      "forecast tie-line primitive schedules",
+      "forecast maintenance-capacity context"
+    ],
+    "not_v1_training_features": [
+      "historical temporary actual without vintage proof",
+      "positive/negative reserve forecasts after their 2026-08-16 availability break",
+      "boundary nuclear forecast",
+      "recently sparse first day-ahead clearing price",
+      "very-short-history auxiliary sources"
+    ],
+    "missing_policy": "no zero fill; retain explicit availability mask; core target-day forecast absence may fail closed; optional fields use training-fitted imputation plus mask"
+  },
+  "model_contract": {
+    "model": "Native-96 TafM",
+    "output": "direct signed spread [B,96]",
+    "loss_v1": "SmoothL1 on robust-scaled RT-DA",
+    "direction_head": false,
+    "magnitude_head": false,
+    "history_physical_window": "7 days",
+    "fine_history": "672 quarter slots",
+    "coarse_history": "168 hourly pooled slots from the same 7 days",
+    "whole96_profile_encoder": "lightweight first",
+    "adaptive_fusion": "learned per-period fine/coarse gate; no hard time-of-day split"
+  }
+}

@@ -1,0 +1,17 @@
+# Frozen-artifact Low diagnosis — 2026-10-10
+
+User-authorized investigation after docs/86 scientific completion; not a model redesign or another scientific training profile.
+
+- Input: the completed FAST24 FULL_V2 sealed scenarios/checkpoints/training-only preprocessing, matched DIRECT96 and NO_LOW_TO_HIGH_CONTEXT results.
+- Dates: exactly the existing 24 dates through 2026-08-13. No September/October truth, no new panel, no fitting or hyperparameter selection.
+- Information timeline: deployable inputs at the existing docs/84 research origin; labels through D-2 for original training. Oracle interventions intentionally use the *already consumed* target Low/High labels after original prediction seals and must be labelled ORACLE/PRIVILEGED, never STRICT deployable predictions.
+- Preserve original code/checkpoints and V1/TafM/production. New outputs only under V2 `low_diagnosis_20261010/<unique run>/`.
+- Primary oracle panel: baseline predicted scenario Low+High; true Low+saved predicted High; saved predicted Low+true High; true Low+true High identity sanity check. Keep saved High fixed for the first intervention: it was conditioned on predicted Low, so this is not an independent High-alone test.
+- Secondary point check: component medians added directly versus the scenario-sum median (not generally identical).
+- Error anatomy: per-day mean offset versus centered shape squared-error decomposition, low/high error covariance and zero-boundary/slot/month slices. No fitting to target truth.
+- Fixed interventions: correct only Low day mean; correct only its demeaned shape; use the frozen T24 smoother once on predicted Low scenarios. T24 is a soft smoother, not an idempotent hard projection; no 'out-of-subspace' assertion.
+- Context inference: reload unchanged per-day checkpoint and legal features, reproduce original outputs first. Intervene only on High's seven Low-summary columns and width: zero summary, oracle Low location while retaining predicted uncertainty, oracle degenerate summary, or zero width while retaining predicted median. Preserve original dependence ranks when comparing the new High marginal; separately record natural full-graph responses when applicable. True Low replaces output in oracle context comparisons, original predicted Low in zero-context comparisons. No oracle latent representation is invented.
+- Selection-history diagnostic: compare the selected Stage A versus selected Stage C *chronological validation* Low/High scores; these are selection evidence, not target-day Stage-A checkpoint predictions. Stage-A refit target checkpoints were not saved, so causal stage deterioration is unresolved without a separately approved rerun.
+- Metrics: pooled and monthly MAE/RMSE, Direction, Balanced, +/- recall, AUC, Brier, CRPS, coverage, prevalence; paired effects versus matching dates. Oracle uncertainty is intentionally removed for replaced components and CRPS gains must not be called deployable gains.
+- Descriptive correlation/roughness/energy and family fusion/context sensitivity; no architecture or loss-weight sweep, no threshold tuning. Structural design proposals must be hypotheses linked to these results, not validated performance claims.
+- Acceptance: 24/24 original predictions reproduced within declared raw-unit tolerances, all original seals verified, identity error <=1e-8, finite diagnostics, exact error decomposition, protected hashes unchanged. Fail closed on checkpoint/input reproduction error.
