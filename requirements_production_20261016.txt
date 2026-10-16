@@ -1,0 +1,13 @@
+# Frozen environment reference for the accepted Spread96 production bundle.
+# Python: 3.11.16
+# CUDA runtime used by accepted environment: 12.6
+# cuDNN: 91002
+# Install the CUDA-compatible PyTorch build appropriate to the deployment host.
+
+torch==2.13.0+cu126
+numpy==2.4.6
+pandas==3.0.6
+pyarrow==25.0.1
+tabm==0.0.3
+scikit-learn==1.9.1
+PyMySQL==1.2.3

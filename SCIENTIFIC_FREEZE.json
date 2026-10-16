@@ -1,0 +1,59 @@
+{
+  "status": "FROZEN_PRE_RUNTIME_GLUE_BASELINE",
+  "date": "2026-10-16",
+  "accepted_chain": "FULL_V2 -> DirectionDecisionV1 -> F_PHASE44_V1",
+  "accepted_2026_ytd_direction": 0.6374446902654868,
+  "accepted_2026_ytd_balanced": 0.6148493941622216,
+  "accepted_panel": "2026-01-01..2026-08-14",
+  "accepted_slots": 21696,
+  "scientific_core_change_authorized": false,
+  "qualification_tests": "34/34 PASS",
+  "consumed_reference_sample_parity": "EXACT_ZERO_DIFF",
+  "source_freeze": {
+    "file_count": 50,
+    "aggregate_sha256": "6a78e57a8b6965aa1b29fc119fb864613544b1e280e10041bdb99b05efc64cd1",
+    "aggregation": "sha256(sorted(path + NUL + file_sha256 + LF))"
+  },
+  "protected_scientific_hashes": {
+    "model.py": "6ef936d80a16267056442976e43e2cb625f613c84313dc44ab97fa381e5ef524",
+    "losses.py": "636ebe11703582911a2c74ef0262fb5200cf91dfec977213c531394abfd25a46",
+    "trainer.py": "5e0eb225e79fd88f1e9f8b9a693d3628a00592af1df5089121d9575396f4e3e3",
+    "full_v2_profile.py": "f34819a76862d5d6f0ec7a8b630709548bafd6e0c93e28a37b94b404e75569ea",
+    "full_v2_trainer.py": "677766940dc8eb993f6953bc4facf5317018982c7a16c2c2e4184a2357cf863e",
+    "formal_full_v2.py": "053d041e22a0954f44bfe93b76dd78f6e4cec352db00729cfd262ac165fb3587",
+    "direction_decision.py": "7fdf0f11a9d4e94a6860b8953aa080666445ecba258569459a28b0f6e30373ce",
+    "frontier_f.py": "8020a86f80e059276a44b7ca6f32c73e28c9a3c21bed79a8884a996c6a35e44b",
+    "t24_operator.npy": "01a0d8a742ffd14b8eff631b2d6dfb0201353f72e9a9beb1d5a0147b8e47abcf"
+  },
+  "qualification_hashes": {
+    "audit_exact_origin.py": "0c85f672f97c9b511582b8d26326ea1fcc5d1eb3928064762ff54d2bd24c38bc",
+    "audit_origin_series.py": "01de2bddc48771cf483fb6f888452453c1981264f668c1c8ef4477e45a876a5b",
+    "capture_exact_origin.py": "3215fde1536d0460bd8ec2ecc7e7b93ee44a8cba956c2d944763d141bc897697",
+    "spread96_input_bundle.py": "8196244280d9b3a88ff15751d0d347324f9d666254ee47c6ec19701af4715ee9"
+  },
+  "environment_reference": {
+    "python": "3.11.16",
+    "torch": "2.13.0+cu126",
+    "cuda_runtime": "12.6",
+    "cudnn": 91002,
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "tabm": "0.0.3",
+    "scikit_learn": "1.9.1",
+    "pymysql": "1.2.3"
+  },
+  "known_remaining_portability_gap": "research final_pipeline CLI still binds SOURCE_SHA256 and CurveStore.canonical; a production-qualified runtime API/entrypoint must be added without changing scientific core",
+  "production_promotion": "BLOCKED_INFORMATION_CONTRACT",
+  "i1_requirement": "30 consecutive real D-1 14:00 exact-origin captures",
+  "forbidden": [
+    "change protected scientific hashes",
+    "retune FULL/DDV1/F",
+    "DA_hat substitution",
+    "D-1 actual fallback",
+    "D-1 forecast fallback",
+    "target truth before seal",
+    "production2.5 write before final bundle review",
+    "git write"
+  ]
+}
